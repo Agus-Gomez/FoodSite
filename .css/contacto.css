@@ -1,0 +1,33 @@
+body {
+    background-image: url(../images/iconos/CoffeeBed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: 800;
+    font-size: x-large;
+    font-family: 'Staatliches', cursive;
+    background-color: #ecdbd9;
+    filter: alpha(opacity=70);
+    -moz-opacity: .70;
+    opacity: .70;
+}
+
+.notificationQuestion {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.notificationSection div, .emailForm div{
+    margin-top:0.25rem;
+    margin-bottom:0.25rem;
+}
