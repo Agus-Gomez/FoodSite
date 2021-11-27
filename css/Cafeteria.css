@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* Cpm border-box, los valores en porcentaje tienen en cuenta
+    el margin y padding para hacer el calculo. Si no, calculan
+    el ancho total MAS estas dos propiedades generando contenedores
+    mas anchos de lo que queremos. */
+    box-sizing: border-box;
+}
+
+
+
+/* GRIDS DE CAFETERÍA
+
+.comida {
+    width: 100%;
+}
+
+.carpetaImagenes {
+    width: 65%;
+    margin: auto;
+    justify-items: center;
+    margin-top: 10%;
+}
+
+.carpetaImagenes img {
+    width: 70%;
+    height: auto;
+    border-radius: 10%;
+
+}
+
+.comidaColumna {
+    display: flex;
+    max-height: 100vh;
+    width: 43vw;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.comida .carpetaImagenes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+
+}
+
+@media(min-width: 520px) {
+    .comida .carpetaImagenes {
+        grid-template-columns: repeat(2, 50%);
+    }
+} */

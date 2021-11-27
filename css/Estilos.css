@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #E1D0D1;
+    color: black;
+}
+
+H1 {
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 3em;
+}
+
+H2,
+H3,
+H4,
+H5,
+H6 {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.headerMenu ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #3535354d;
+    border-radius: 15%;
+}
+
+/*CLASES AUXILIARES; ESTO ESTÁ AFECTANDO A LA BIOGRAFÍA*/
+
+.secciones {
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+/*HEADER*/
+
+
+.header {
+    /*FALTA QUE TENGA MÁS ALTURA EL HEIGHT*/
+    position: fixed;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*AQUÍ IRÍA LA CONFIGURACIÓN PARA EL LOGO*/
+
+.headerMenu {
+    width: 40%;
+}
+
+.headerMenu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+}
+
+.headerMenu ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+/*COFFEE BACKGROUND*/
+
+.coffee {
+    width: 100%;
+    height: 74vh;
+    background-image: url(/images/iconos/PinkCoffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*HEADER IPAD MEDIA*/
+
+
+/*BIOGRAFÍA*/
+
+.biografia {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 75vh;
+    font-size: 1.25rem;
+    line-height: 1.8;
+
+}
+
+.biografia aside,
+.biografia img {
+    display: flex;
+    align-items: flex-end;
+    margin: 0.5%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+/*GALERÍA DE MUESTRA*/
+
+.section-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+H2 {
+    margin: 35px 0;
+    padding: 10px 0;
+    background-color: #B5B4A2;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.35s ease-in;
+}
+
+.overlay H3 {
+    color: #000000;
+    position: absolute;
+    background-color: #b5b4a29f;
+    border-radius: 20%;
+    padding: 12%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+/*AL PASAR EL MOUSE EL TEXO DEL LOCAL APARECERÁ EN LA FOTO*/
+
+.imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-imagenes .imagen {
+    position: relative;
+    max-width: 20vw;
+    margin-right: 5px;
+    max-height: 50vh;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
+    border-radius: 10%;
+}
+
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+
+/*GRIDS DE IMAGENES*/
+
+.comida {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carpetaImagenes {
+    width: 65%;
+    margin: auto;
+    justify-items: center;
+}
+
+.carpetaImagenes img {
+    height: auto;
+    border-radius: 10%;
+    width: 100%;
+}
+
+
+.section-galeria div {
+    border: none;
+}
+
+.comidaColumna {
+    display: flex;
+    max-height: 100vh;
+    width: 43vw;
+    padding: 2rem;
+    justify-content: center;
+    width: auto;
+}
+
+.comida .carpetaImagenes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+
+
+}
+
+/*FOOTER*/
+
+.footerBody {
+    margin-top: 11%;
+    display: flex;
+}
+
+.footerImageCredits {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-items: center;
+    grid-template-areas:
+        'row1'
+        'row2'
+        'row3';
+    background-color: #c0a0c3;
+    width: 100%;
+    padding: 5px 65px;
+}
+
+.footerImageCredits div {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+.creditsLocals {
+    grid-area: row1;
+}
+
+.blogInspiration {
+    grid-area: row2;
+}
+
+.foodBlog {
+    grid-area: row3;
+    margin: 2% 0;
+}
+
+.footerList {
+    grid-row: 1/6;
+    display: flex;
+    margin-right: 14rem;
+    margin-left: 10rem;
+}
+
+.footerList ul {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.footerList ul li a {
+    text-decoration: none;
+}
+
+.blogList {
+    text-align: center;
+    background-color: #e4ded0;
+    padding: 1%;
+}
+
+.blogList ul li {
+    display: flex;
+    list-style: none;
+    display: inline-block;
+}
+
+/*EDICIÓN DE REDES SOCIALES E ÍCONOS*/
+
+.blogList img,
+.foodBlogI img {
+    height: 2rem;
+}
+
+/*FORMULARIO DE CONTACTO*/
+.registro {
+    text-align: center;
+}
+
+.notificationSection {
+    margin: 3%;
+}
+
+.emailForm {
+    margin: 3%;
+}
+
+.textContact {
+    padding: 3%;
+}
+
+/*MEDIDAS DE IPAD*/
+
+@media(max-width: 1025px) {
+
+    .coffee {
+        height: 30vh;
+    }
+
+    .biografia aside,
+    .biografia img {
+        align-items: flex-start;
+        height: 70%;
+    }
+
+    .headerMenu ul li {
+        padding: 5%;
+        font-size: 1.9rem;
+    }
+
+    .headerMenu ul {
+        justify-content: center;
+    }
+
+    .comida .carpetaImagenes {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .comidaColumna {
+        padding: 0.5rem;
+    }
+
+
+    .section-galeria {
+        padding-top: 10%;
+    }
+
+    .contenedor-imagenes .imagen {
+        max-width: 30vw;
+    }
+
+    .notificationSection {
+        font-size: 1.5rem;
+    }
+
+    .footerBody .footerImageCredits {
+        padding: 1% 1%;
+        justify-content: unset;
+    }
+
+    .footerBody .footerList {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .footerList ul li a {
+        text-decoration: none;
+    }
+
+
+}
+
+/*MEDIDAS DE IPAD ACOSTADO*/
+
+@media(max-width: 1370px) {
+    .coffee {
+        height: 30vh;
+    }
+
+    .biografia aside .ladyCake {
+        display: block;
+    }
+
+    .section-galeria {
+        padding-top: 20%;
+    }
+
+    .comida .carpetaImagenes {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+/*MEDIDAS DE CELULAR*/
+
+@media(max-width: 740px) {
+
+    .coffee {
+        height: 20vh;
+    }
+
+    .headerMenu ul {
+        justify-content: center;
+    }
+
+    .headerMenu ul li {
+        padding: 5%;
+        font-size: 1.3rem;
+    }
+
+    .biografia {
+        line-height: 1.5;
+        margin-bottom: 20%;
+    }
+
+    .biografia aside .catCake {
+        height: 12rem;
+    }
+
+
+    .biografia aside .ladyCake {
+        display: none;
+    }
+
+    .comida .carpetaImagenes {
+        grid-template-columns: repeat(1, 90%);
+    }
+
+    .notificationSection {
+        font-size: 0.9rem;
+    }
+
+    .footerBody {
+        margin-top: 15%;
+    }
+
+    .footerBody .footerImageCredits {
+        padding: 1% 1%;
+        justify-content: unset;
+    }
+
+    .footerBody .footerList {
+        display: none;
+    }
+
+    .footerImageCredits p {
+        font-size: 0.8rem;
+    }
+
+    .blogList img,
+    .foodBlogI img {
+        height: 1.8rem;
+    }
+}

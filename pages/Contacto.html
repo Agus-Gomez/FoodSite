@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../CSSnew/Estilos.css">
+    <link rel="stylesheet" href="../css/Estilos.css">
 
     <title>ClaraMichi</title>
 
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header class="header">
 
         <!--AQUÍ PODEMOS PONER EL LOGO DE CLARAMICHI, DEL LADO DE LA DERECHA-->
@@ -40,95 +41,142 @@
 
     <!-- LISTA ORDENADA -->
     <section>
-        <h3>Contacto</h3>
-        <H3>Si quieres enterarte primero que nadie de tu nuevo local favorito puedes suscribirte aquí</H3>
+        <div class="textContact">
+            <h3>Contacto</h3>
+            <H3>Si quieres enterarte primero que nadie de tu nuevo local favorito puedes suscribirte aquí</H3>
 
-        <!-- LISTA ORDENADA -->
-        <form action="/" method="post">
-            <div class="notificationSection">
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="ejemplo@.com" required>
-                </div>
+            <!-- LISTA ORDENADA -->
+            <div class="registro">
+                <form action="/" method="post">
+                    <div class="notificationSection">
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="ejemplo@.com" required>
+                        </div>
 
-                <p class="notificationQuestion">¿Cada cuánto quieres recibir notificaciones?</p>
-                <div>
-                    <div>
-                        <label for="dia">Día</label>
-                        <input id="dia" type="radio" name="notificationPeriod" value="D">
+                        <p class="notificationQuestion">¿Cada cuánto quieres recibir notificaciones?</p>
+                        <div>
+                            <div>
+                                <label for="dia">Día</label>
+                                <input id="dia" type="radio" name="notificationPeriod" value="D">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="semana">Cada semana</label>
+                                <input id="semana" type="radio" name="notificationPeriod" value="W">
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="dosSemanas">Cada 2 Semanas</label>
+                                <input id="dosSemanas" type="radio" name="notificationPeriod" value="2W" />
+                            </div>
+                        </div>
+                        <input type="submit" value="Let's eat">
                     </div>
-                </div>
+                </form>
 
-                <div>
-                    <div>
-                        <label for="semana">Cada semana</label>
-                        <input id="semana" type="radio" name="notificationPeriod" value="W">
+
+                <h3>Puedes recomendar locales o ser parte de nuestro blog mandando un correo aquí</h3>
+
+                <form action="/" method="post">
+                    <div class="emailForm">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <div>
+                                <input id="nombre" type="text" placeholder="Nombre real o Apodo">
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <label class="email" for="email">Email:</label>
+                            <div>
+                                <input id="email" type="email" placeholder="Ejemplo@gmail.com">
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <label for="cuéntanos">Cuéntanos:</label>
+                            <div>
+                                <textarea id="cuéntanos" rows="6"
+                                    placeholder="¡Cuéntanos sobre vos! Puedes agregar links o direcciones del local a visitar"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar!"></input>
                     </div>
-                </div>
 
-                <div>
-                    <div>
-                        <label for="dosSemanas">Cada 2 Semanas</label>
-                        <input id="dosSemanas" type="radio" name="notificationPeriod" value="2W" />
-                    </div>
-                </div>
-                <input type="submit" value="Let's eat">
+                </form>
             </div>
-        </form>
-    </section>
-
-
-    <h3>Puedes recomendar locales o ser parte de nuestro blog mandando un correo aquí</h3>
-
-    <form action="/" method="post">
-        <div class="emailForm">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <div>
-                    <input id="nombre" type="text" placeholder="Nombre real o Apodo">
-                </div>
-            </div>
-
-
-            <div>
-                <label class="email" for="email">Email:</label>
-                <div>
-                    <input id="email" type="email" placeholder="Ejemplo@gmail.com">
-                </div>
-            </div>
-
-
-            <div>
-                <label for="cuéntanos">Cuéntanos:</label>
-                <div>
-                    <textarea id="cuéntanos" rows="6"
-                        placeholder="¡Cuéntanos sobre vos! Puedes agregar links o direcciones del local a visitar"></textarea>
-                </div>
-            </div>
-            <input type="submit" value="Enviar!"></input>
         </div>
-    </form>
-
     </section>
-    <br>
-    <br>
-    <section class="pieDePagina">
-        <footer>
-            <div class="table">
-                <div class="tableRow">
 
-                    <div class="tableCell">Créditos de imágenes</div>
-                    <div class="tableCell">ClaraMichi</div>
-                </div>
-                <div class="tableRow">
 
-                    <div class="tableCell">Entre Tostadas y locales mostrados</br>
-                        Redes sociales</div>
-                    <div class="tableCell">Click aquí para contactos</br>
-                        Redes sociales</div>
+    <footer>
+        <div class="footerBody">
+            <div class="footerImageCredits">
+
+                <div class="creditsLocals">
+
+                    <p>Créditos de las imágenes a todos los locales mostrados</p>
+
                 </div>
 
-        </footer>
+                <div class="blogInspiration">
+                    <p>Inspiración para el blog</p>
+                </div>
+
+                <div class="foodBlog">
+                    <p>Entre Tostadas</p>
+                </div>
+                <div class="foodBlogI">
+                    <a href=""><img src="../images/iconos/redes sociales/Instagram.png" alt="Instagram Link"></a>
+                    <a href=""><img src="../images/iconos/redes sociales/Facebook.png" alt="Facebook Link"></a>
+                    <a href=""><img src="../images/iconos/redes sociales/YouTube.png" alt="YouTube Link"></a>
+                    <a href=""><img src="../images/iconos/redes sociales/TikTok.png" alt="TikTok Link"></a>
+                </div>
+
+
+
+                <div class="footerList">
+                    <ul>
+                        <li><a href="./Cafeteria.html">Cafetería</a></li>
+                        <li><a href="./RestoBar.html">RestoBar</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./Heladeria.html">Heladería</a></li>
+                        <li><a href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="blogList">
+
+            <ul>
+                <li>
+                    <img src="../images/iconos/redes sociales/TikTok.png" alt="TikTok">
+                </li>
+                <li>
+                    <img src="../images/iconos/redes sociales/Instagram.png" alt="Instagram link">
+                </li>
+
+                <li>
+                    <h4>CLARAMICHI</h4>
+                </li>
+                <li>
+                    <img src="../images/iconos/redes sociales/Facebook.png" alt="Facebook link">
+                </li>
+                <li>
+                    <img src="../images/iconos/redes sociales/YouTube.png" alt="YouTube link">
+                </li>
+
+            </ul>
+        </div>
+
+    </footer>
     </section>
 
 </body>
