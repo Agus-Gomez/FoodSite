@@ -189,6 +189,7 @@ H2 {
     width: 65%;
     margin: auto;
     justify-items: center;
+    grid-template-columns: repeat(2, 50%);
 }
 
 .carpetaImagenes img {
@@ -216,6 +217,7 @@ H2 {
     justify-content: center;
     align-content: center;
     gap: 5px;
+    grid-template-columns: repeat(2, 50%);
 
 
 }
