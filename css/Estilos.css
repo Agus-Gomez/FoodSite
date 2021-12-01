@@ -76,7 +76,7 @@ H6 {
 .coffee {
     width: 100%;
     height: 74vh;
-    background-image: url(/images/iconos/PinkCoffee.jpg);
+    background-image: url(../images/iconos/PinkCoffee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
