@@ -5,74 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaraMichi</title>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
+
+    <!--CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--ANIMACION ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Mi CSS-->
     <link rel="stylesheet" href="../css/Estilos.css">
-
-    <title>ClaraMichi</title>
-
 </head>
 
 <body>
 
-    <header class="header">
+    <!-- HEADER SECTION -->
+    <section id="header">
+        <div class="animate-navbar animate__animated animate__fadeInDown">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-        <!--AQUÍ PODEMOS PONER EL LOGO DE CLARAMICHI, DEL LADO DE LA DERECHA-->
-
-        <H1>ClaraMichi</H1>
-        <nav class="headerMenu">
-
-            <!--LISTA DESORDENADA-->
-
-            <ul>
-                <li><a href="./Cafeteria.html">Cafetería</a></li>
-                <li><a href="./RestoBar.html">RestoBar</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Heladeria.html">Heladería</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="coffee"></section>
-
-    <section>
-
-        <h3>BARES CON LA MEJOR TEMÁTICA</h3>
-        <div class="comida">
-
-            <div class="carpetaImagenes">
-
-                <div class="comidaColumna">
-                    <img src="../images/RestoBar/Aleppo Cocina Siria/aleppococinasiriaFalafel.jpg"
-                        alt="Falafel del local Aleppo Cocina Siria">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="../pages/Cafeteria.html" class="nav-link">Cafetería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/RestoBar.html" class="nav-link">RestoBar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/Heladeria.html" class="nav-link">Heladería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pages/Contacto.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+        </div>
+    </section>
+    <!--HEADER SECTION END-->
 
-
-                <div class="comidaColumna">
-                    <img src="../images/RestoBar/D oro italian bar/doroitalianbarPasta2.jpg"
-                        alt="Plato de pasta de D'oro italian bar">
-
-                </div>
-
-                <div class="comidaColumna">
-
-                    <img src="../images/RestoBar/Lado V/LadoVFood.jpg"
-                        alt="Plato de papas y nachos más tragos y hamburguesa del local Lado V">
-                </div>
-
-                <div class="comidaColumna">
-                    <img src="../images/RestoBar/Letit V/LetitVBrunch.jpg" alt="Brunch con platos veganos de Letit V">
-
+    <!--MAIN SECTION-->
+    <section class="main-RB">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-right">
+                    <div class="col-sm-12 col-md-6">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--MAIN SECTION END-->
+
+    <section>
+
+        <h3>BARES CON LA MEJOR TEMÁTICA</h3>
+
+        <body>
+            <div class="locals-galery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mt-3 col-lg-4">
+                            <img src="../images/RestoBar/AdelaVintage/AdelaVintageBrunch.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-4">
+
+                            <img src="../images/RestoBar/Aleppo Cocina Siria/aleppococinasiria3.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-4">
+                            <img src="../images/RestoBar/Amazonia Brasas/AmazoniaBrasasBrunch.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-6">
+                            <img src="../images/RestoBar/EggsNGreens/EggsNGreensBrunch.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-6">
+                            <img src="../images/RestoBar/Lado V/LadoVFood.jpg" class="img-fluid" alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-4">
+                            <img src="../images/RestoBar/Letit V/LetitVBrunch.jpg" class="img-fluid" alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-4">
+                            <img src="../images/RestoBar/Palacio Dor/PalacioD'orBrunch.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+                        <div class="col-md-4 mt-3 col-lg-4">
+                            <img src="../images/RestoBar/VinoTintoCocina/VinoTintoCocinaBrunch.jpg" class="img-fluid"
+                                alt="image">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </body>
+    </section>
 
 
-    <footer>
+    <footer class="footerCustom">
         <div class="footerBody">
             <div class="footerImageCredits">
 
@@ -100,16 +147,16 @@
 
                 <div class="footerList">
                     <ul>
-                        <li><a href="./Cafeteria.html">Cafetería</a></li>
-                        <li><a href="./RestoBar.html">RestoBar</a></li>
+                        <li><a href="../pages/Cafeteria.html">Cafetería</a></li>
+                        <li><a href="../pages/RestoBar.html">RestoBar</a></li>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./Heladeria.html">Heladería</a></li>
-                        <li><a href="./Contacto.html">Contacto</a></li>
+                        <li><a href="../pages/Heladeria.html">Heladería</a></li>
+                        <li><a href="../pages/Contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="blogList">
+        <div class="blogListFooter">
 
             <ul>
                 <li>
@@ -133,6 +180,22 @@
         </div>
 
     </footer>
+
+    <!--JAVASCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--SEPARATE-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <!--JAVASCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -6,8 +6,9 @@
 
 body {
     font-family: 'PT Sans Narrow', sans-serif;
-    background-color: #E1D0D1;
     color: black;
+    background-color: #d3d2d1;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%230d0a13' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 H1 {
@@ -25,89 +26,109 @@ H6 {
     text-align: center;
 }
 
-.headerMenu ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: #3535354d;
-    border-radius: 15%;
-}
 
-/*CLASES AUXILIARES; ESTO ESTÁ AFECTANDO A LA BIOGRAFÍA*/
+/*HEADER SECTION*/
 
-.secciones {
-    margin: 50px 0;
-    padding: 0 50px;
-}
-
-/*HEADER*/
-
-
-.header {
-    /*FALTA QUE TENGA MÁS ALTURA EL HEIGHT*/
+#header {
     position: fixed;
     width: 100%;
-    padding: 10px 40px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+/*DURACIÓN DE ANIMACIONES*/
+.animate-navbar {
+    animation-duration: 0.9s;
+}
+
+.animate-welcome {
+    animation-duration: 1.8s;
+}
+
+/*ESTILOS DE BARRA Y PORTADA*/
+
+.navbar {
+    padding: 50px 0;
+}
+
+.navbar-brand {
+    margin: 0% 25% 0% 10%;
+    font-weight: bold;
+    font-size: 1.9em;
+    color: rgb(255, 255, 255);
+}
+
+
+.container-menu {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-
 }
 
-/*AQUÍ IRÍA LA CONFIGURACIÓN PARA EL LOGO*/
-
-.headerMenu {
-    width: 40%;
+.collapse .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 2rem;
 }
 
-.headerMenu ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    list-style: none;
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.headerMenu ul li {
-    display: inline-block;
-    font-size: 1.5rem;
+.nav-item a {
+    color: #ccc !important;
 }
 
-/*COFFEE BACKGROUND*/
+.nav-link {
+    color: blue;
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: 700;
+}
 
-.coffee {
-    width: 100%;
-    height: 74vh;
-    background-image: url(../images/iconos/PinkCoffee.jpg);
-    background-repeat: no-repeat;
+/*BOTON AL PASAR EL MOUSE*/
+.nav-link:hover {
+    background: #121f55;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+.main {
+    position: relative;
+    background-image: url(../images/iconos/CatBaking.jpg);
+    min-height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    padding: 260px 0 220px;
 }
 
-/*HEADER IPAD MEDIA*/
 
-
-/*BIOGRAFÍA*/
-
-.biografia {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 75vh;
-    font-size: 1.25rem;
-    line-height: 1.8;
-
+.main h1 {
+    font-size: 7em;
+    color: #e7e3e3;
+    font-weight: bold;
+    text-align: center;
 }
 
-.biografia aside,
-.biografia img {
-    display: flex;
-    align-items: flex-end;
-    margin: 0.5%;
-    height: 80%;
-    border-radius: 10%;
+.main p {
+    margin-top: 1em;
+    padding: 0;
+    font-size: 16px;
+    color: #ccc;
+    padding-bottom: 25px;
 }
 
-/*GALERÍA DE MUESTRA*/
+
+.main .readMore {
+    background: #718093;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/*GALERÍA DEL INICIO*/
 
 .section-galeria {
     display: flex;
@@ -116,10 +137,11 @@ H6 {
 
 }
 
-H2 {
-    margin: 35px 0;
+.caruselTitle {
+    margin: 100px 400px 100px;
     padding: 10px 0;
-    background-color: #B5B4A2;
+    background-color: #948b8593;
+    border-radius: 4rem;
 }
 
 .overlay {
@@ -133,9 +155,7 @@ H2 {
 }
 
 .overlay H3 {
-    color: #000000;
     position: absolute;
-    background-color: #b5b4a29f;
     border-radius: 20%;
     padding: 12%;
     top: 50%;
@@ -145,88 +165,92 @@ H2 {
 
 }
 
-/*AL PASAR EL MOUSE EL TEXO DEL LOCAL APARECERÁ EN LA FOTO*/
-
-.imagen:hover .overlay {
-    height: 100%;
-    cursor: pointer;
+.carousel {
+    width: 640px;
+    height: 720px;
 }
 
-.contenedor-imagenes {
-    display: flex;
-    justify-content: space-around;
+/*INFO DEL LOCAL Y COMIDA DEL CARRUSEL*/
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 4rem;
+    margin-bottom: 50px;
 }
 
-.contenedor-imagenes .imagen {
-    position: relative;
-    max-width: 20vw;
-    margin-right: 5px;
-    max-height: 50vh;
-    margin-bottom: 5px;
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
-    border-radius: 10%;
+.carousel-item p {
+    font-size: 1.5rem;
+
 }
 
+.carousel-indicators {
+    margin-bottom: -4rem;
+}
 
 .imagen img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10%;
+    max-width: 90vw;
+    margin-right: 5px;
+    max-height: 90vh;
+    margin-bottom: 5px;
 }
 
 
 
 /*GRIDS DE IMAGENES*/
 
-.comida {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.locals-galery .container .row img {
+    height: 100%;
+    border-radius: 7%;
 }
 
-.carpetaImagenes {
-    width: 65%;
-    margin: auto;
-    justify-items: center;
-    grid-template-columns: repeat(2, 50%);
+/*FONDO DE RESTOBAR*/
+.main-RB {
+    position: relative;
+    background-image: url(../images/iconos/CatWithEgg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
-.carpetaImagenes img {
-    height: auto;
-    border-radius: 10%;
-    width: 100%;
+/*FONDO DE HELADERÍA*/
+.main-H {
+    position: relative;
+    background-image: url(../images/iconos/BlackCat_Ice_Cream_.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
-
-.section-galeria div {
-    border: none;
+.main-Caf {
+    position: relative;
+    background-image: url(../images/iconos/CoffeeCat.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
-.comidaColumna {
-    display: flex;
-    max-height: 100vh;
-    width: 43vw;
-    padding: 2rem;
-    justify-content: center;
-    width: auto;
-}
-
-.comida .carpetaImagenes {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    gap: 5px;
-    grid-template-columns: repeat(2, 50%);
-
-
+.main-Con {
+    position: relative;
+    background-image: url(../images/iconos/CatContact.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
 }
 
 /*FOOTER*/
 
+.footerCustom {
+    background-color: #b4aebd;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%232b2d2a' fill-opacity='0.08' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
 .footerBody {
     margin-top: 11%;
     display: flex;
+
 }
 
 .footerImageCredits {
@@ -238,7 +262,7 @@ H2 {
         'row1'
         'row2'
         'row3';
-    background-color: #c0a0c3;
+
     width: 100%;
     padding: 5px 65px;
 }
@@ -276,15 +300,15 @@ H2 {
 
 .footerList ul li a {
     text-decoration: none;
+    color: rgb(22, 18, 18);
 }
 
-.blogList {
+.blogListFooter {
     text-align: center;
-    background-color: #e4ded0;
-    padding: 1%;
+    padding-bottom: 1%;
 }
 
-.blogList ul li {
+.blogListFooter ul li {
     display: flex;
     list-style: none;
     display: inline-block;
@@ -292,7 +316,7 @@ H2 {
 
 /*EDICIÓN DE REDES SOCIALES E ÍCONOS*/
 
-.blogList img,
+.blogListFooter img,
 .foodBlogI img {
     height: 2rem;
 }
@@ -306,10 +330,6 @@ H2 {
     margin: 3%;
 }
 
-.emailForm {
-    margin: 3%;
-}
-
 .textContact {
     padding: 3%;
 }
@@ -318,44 +338,22 @@ H2 {
 
 @media(max-width: 1025px) {
 
-    .coffee {
-        height: 30vh;
+    .animate-welcome {
+        animation-duration: 1.4s;
     }
 
-    .biografia aside,
-    .biografia img {
-        align-items: flex-start;
-        height: 70%;
+    .animate-navbar {
+        animation-duration: 0.8s;
     }
 
-    .headerMenu ul li {
-        padding: 5%;
-        font-size: 1.9rem;
+    .caruselTitle {
+        margin: 4%;
     }
 
-    .headerMenu ul {
-        justify-content: center;
-    }
-
-    .comida .carpetaImagenes {
-        grid-template-columns: repeat(2, 50%);
-    }
-
-    .comidaColumna {
-        padding: 0.5rem;
-    }
-
-
-    .section-galeria {
-        padding-top: 10%;
-    }
-
-    .contenedor-imagenes .imagen {
-        max-width: 30vw;
-    }
-
-    .notificationSection {
-        font-size: 1.5rem;
+    H2.caruselTitle {
+        padding: 10px 0;
+        background-color: #B5B4A2;
+        border-radius: 4rem;
     }
 
     .footerBody .footerImageCredits {
@@ -372,66 +370,42 @@ H2 {
         text-decoration: none;
     }
 
-
-}
-
-/*MEDIDAS DE IPAD ACOSTADO*/
-
-@media(max-width: 1370px) {
-    .coffee {
-        height: 30vh;
-    }
-
-    .biografia aside .ladyCake {
-        display: block;
-    }
-
-    .section-galeria {
-        padding-top: 20%;
-    }
-
-    .comida .carpetaImagenes {
-        grid-template-columns: repeat(2, 50%);
-    }
 }
 
 /*MEDIDAS DE CELULAR*/
 
 @media(max-width: 740px) {
 
-    .coffee {
-        height: 20vh;
-    }
-
-    .headerMenu ul {
-        justify-content: center;
-    }
-
-    .headerMenu ul li {
-        padding: 5%;
-        font-size: 1.3rem;
-    }
-
-    .biografia {
-        line-height: 1.5;
-        margin-bottom: 20%;
-    }
-
-    .biografia aside .catCake {
-        height: 12rem;
-    }
-
-
-    .biografia aside .ladyCake {
-        display: none;
-    }
-
-    .comida .carpetaImagenes {
-        grid-template-columns: repeat(1, 90%);
+    .main h1 {
+        font-size: 4em;
+        color: #e0e0e0;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 4px 0px black;
     }
 
     .notificationSection {
         font-size: 0.9rem;
+    }
+
+
+    .carousel {
+        height: 351px;
+    }
+
+    .caruselTitle {
+        margin: 100px 0px 100px;
+        padding: 25px 0;
+        background-color: #B5B4A2;
+        border-radius: 4rem;
+    }
+
+    h2.caruselTitle {
+        margin: 55px 10px;
+    }
+
+    .section-galeria {
+        padding: 10%;
     }
 
     .footerBody {
@@ -449,10 +423,5 @@ H2 {
 
     .footerImageCredits p {
         font-size: 0.8rem;
-    }
-
-    .blogList img,
-    .foodBlogI img {
-        height: 1.8rem;
     }
 }

@@ -11,6 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
+
+    <!--CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <!--ANIMACION ANIMATE.STYLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!--Mi CSS-->
     <link rel="stylesheet" href="./css/Estilos.css">
 </head>
@@ -18,84 +28,121 @@
 <body>
     <header class="header">
 
-        <!--AQUÍ PODEMOS PONER EL LOGO DE CLARAMICHI, DEL LADO DE LA DERECHA-->
+        <!-- HEADER SECTION -->
+        <section id="header">
+            <div class="animate-navbar animate__animated animate__fadeInDown">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a href="./index.html" class="navbar-brand">Logo</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle Navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-        <H1>ClaraMichi</H1>
-
-        <nav class="headerMenu">
-
-            <!--LISTA DESORDENADA-->
-
-            <ul>
-                <li><a href="./pages/Cafeteria.html">Cafetería</a></li>
-                <li><a href="./pages/RestoBar.html">RestoBar</a></li>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/Heladeria.html">Heladería</a></li>
-                <li><a href="./pages/Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="coffee"></section>
-
-    <section class="biografia">
-        <div class="secciones">
-            <p>Bienvenido a</p>
-            <H1>ClaraMichi</H1>
-            <p>Pequeña descripción de por qué hice el blog de comida y mis conocimientos en
-                atención al cliente</p>
-            <p>ocupación de trabajo con lineas a los costados</p>
-            <p>firma de blog</p>
-        </div>
-
-        <aside>
-            <img class="catCake" src="./images/iconos/CatBaking.jpg" alt="Foto de comida con gato de fondo">
-            <img class="ladyCake" src="./images/iconos/Lemon.jpg" alt="Tarta de limón con arándanos">
-        </aside>
-    </section>
-
-    <section class="section-galeria">
-        <div class="galeria">
-
-            <H2>Locales
-                Recientes</H2>
-
-            <div class="contenedor-imagenes">
-                <div class="imagen">
-                    <img src="./images/Cafeterias/Matcha Point/matchapointFood.jpg"
-                        alt="Bizcocho con Fruta de MatchaPoint">
-                    <div class="overlay">
-                        <div>
-                            <H3>Matcha Point</H3>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="./pages/Cafeteria.html" class="nav-link">Cafetería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/RestoBar.html" class="nav-link">RestoBar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/Heladeria.html" class="nav-link">Heladería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./pages/Contacto.html" class="nav-link">Contacto</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="imagen">
-                    <img src="./images/Heladerias/Alchemy.BA/alchemy.baPizza.jpg" alt="Pizza de Heladeria Alchemy">
-                    <div class="overlay">
-                        <div>
-                            <H3>Alchemy</br>
-                                B.A</H3>
-                        </div>
-                    </div>
-                </div>
+                </nav>
+            </div>
+        </section>
+        <!--HEADER SECTION END-->
 
-                <div class="imagen">
-                    <img src="./images/RestoBar/Aleppo Cocina Siria/aleppococinasiriaFalafel.jpg"
-                        alt="Plato de Falafel de Aleppo Cocina">
-                    <div class="overlay">
-                        <div>
-                            <H3>Aleppo Cocina</H3>
+        <!--MAIN SECTION-->
+        <section class="main">
+            <div class="container">
+                <div class="row">
+                    <div class=" animate-welcome animate__animated animate__fadeInLeft">
+                        <div class="col-sm-12 col-md-6">
+                            <H4>BIENVENIDO A</H4>
+                            <H1>ClaraMichi</H1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eos voluptatum commodi
+                                expedita soluta optio culpa voluptates magnam temporibus explicabo?</p>
+
+                            <a href="" class="readMore">Bon Appétit!</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!--MAIN SECTION END-->
+
+    </header>
+
+
+    <H2 class="caruselTitle">Locales
+        Recientes</H2>
+
+    <section class="section-galeria">
+
+
+        <!--MUESTRA DE LOCALES RECIENTES-->
+
+        <div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="imagen">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/Cafeterias/Matcha Point/matchapointFood.jpg" class="d-block w-100"
+                            alt="Bizcocho con frutas de Matcha Point">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Matcha Point</h4>
+                            <p>Bizcocho de Matcha con frutas y crema de decoración</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/RestoBar/EggsNGreens/EggsNGreensBrunch.jpg" class="d-block w-100"
+                            alt="Pizza de Alchemy B.A">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Alchemy B.A</h4>
+                            <p>Pizza con tiras de jamón cocido y alvahaca.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Heladerias/LabanPatisserie/LabanPatisseireHelado.jpg">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Laban Patisserie</h4>
+                            <p>Macarones de helado de Mango, Chocolate, Pistacho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
 
 
     </section>
 
-    <footer>
+    <footer class="footerCustom">
         <div class="footerBody">
             <div class="footerImageCredits">
 
@@ -132,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="blogList">
+        <div class="blogListFooter">
 
             <ul>
                 <li>
@@ -157,6 +204,21 @@
 
     </footer>
 
+    <!--JAVASCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--SEPARATE-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+    <!--JAVASCRIPT AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
