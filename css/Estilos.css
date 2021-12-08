@@ -59,8 +59,8 @@ H6 {
 }
 
 
-.container-menu {
-    display: flex;
+.container-fluid img {
+    width: 110px;
 }
 
 .collapse .navbar-nav {
@@ -93,6 +93,7 @@ H6 {
     border-radius: 10px;
 }
 
+/*CONFIGURACIÓN PARA EL TEXTO DE BIENVENIDA*/
 
 .main {
     position: relative;
