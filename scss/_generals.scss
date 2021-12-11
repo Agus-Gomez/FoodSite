@@ -1,0 +1,20 @@
+body {
+    font-family: $fuente-base;
+    color: $dark-color;
+    background:
+radial-gradient(circle at 100% 50%, transparent 20%, rgba(255, 255, 255, 0.144) 21%, rgba(255, 255, 255, 0.144) 34%, transparent 35%, transparent),
+radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 255, 255, 0.144) 21%, rgba(255, 255, 255, 0.144) 34%, transparent 35%, transparent) 0 -50px;
+background-color: #a1bfc4;
+background-size:75px 100px; }
+
+h1 {
+    font-family: $fuente-logo;
+    color: $light-color;
+    font-size: $font-160;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: $fuente-subtexto;
+    text-align: center;
+}

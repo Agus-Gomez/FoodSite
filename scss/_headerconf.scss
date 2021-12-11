@@ -1,0 +1,119 @@
+/*Header Section*/
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #d3d2d19d;
+}
+
+/*Animaciones de Inicio*/
+.animate-navbar {
+    animation-duration: 0.9s;
+}
+
+.animate-welcome {
+    animation-duration: 1.8s;
+}
+
+/*Estilo de barra, Logo y portada*/
+
+/*Tamaño de Logo*/
+.container-fluid img {
+    width: 110px;
+}
+
+/*Barra de navegación*/
+.navbar {
+    padding: 50px 0;
+
+
+    &-brand {
+        margin: 0% 25% 0% 10%;
+        font-weight: bold;
+        font-size: $font-16;
+    }
+
+    .collapse &-nav {
+        background-color:#f35a2385;
+        border-radius: 2rem;
+    }
+}
+
+/*Texto de barra de navegación*/
+.nav-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+    & a {
+        color: $light-color !important;
+    }
+}
+
+//Revisar si el color azúl realmente está cambiando algo
+.nav-link {
+    letter-spacing: 2px;
+    font-size: $font-24;
+    font-weight: bold;
+
+
+    /*Color del botón al posar el mouse*/
+    &:hover {
+        background: #b15c5c;
+        border-radius: 10px;
+    }
+}
+
+/*Texto de Bienvenida*/
+.main {
+    position: relative;
+    background-image: url(../images/iconos/CatWithChef2.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding: 260px 0 220px;
+
+    .col-sm-12 {
+        H4 {
+            color: $light-color;
+            padding-top: 3%;
+            margin-bottom: 0;
+        }
+
+        H1 {
+            margin: 0%;
+            padding: 3%;
+            font-size: 9rem;
+        }
+    }
+
+    p {
+        padding: 5%;
+        padding-bottom: 25px;
+        font-size: $font-24;
+        color: $dark-color;
+        background-color: #f7e1acad;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    & .read-more {
+        background: #74c3cb;
+        color: $light-color;
+        font-size: $font-24;
+        margin-left: 39%;
+        border-radius: 5px;
+        padding: 10px 20px;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+/*Altura del texto de bienvenida*/
+.row {
+    margin-top: 10%;
+}

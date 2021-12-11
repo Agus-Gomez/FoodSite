@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import"variables";
+
+@import"generals";
+
+@import"headerconf";
+
+@import"caruselimages";
+
+@import"gridimages";
+
+@import"contacto";
+
+@import"footer";
+
+@import"responsive";

@@ -1,0 +1,124 @@
+/*Medidas de Ipad*/
+@media screen and (max-width: 1025px) {
+
+    .animate-welcome {
+        animation-duration: 1.4s;
+    }
+
+    .animate-navbar {
+        animation-duration: 0.8s;
+    }
+
+    .main {
+        .col-md-6 {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #e0e0e0;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    .carousel-title {
+        margin: 4%;
+
+        & H2 {
+            padding: 10px 0;
+            background-color: #B5B4A2;
+            border-radius: 4rem;
+        }
+    }
+
+    .footer-body .footer-image-credits {
+        padding: 1% 1%;
+        justify-content: unset;
+    }
+
+    .footer-body .footer-list {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .footer-list ul li a {
+        text-decoration: none;
+    }
+}
+
+/*Medidas de Celular*/
+
+@media screen and (max-width: 740px) {
+
+    .main {
+        padding: 176px 0 220px;
+
+        .col-sm-12 {
+            margin: 0%;
+            padding: 0%;
+
+            h1 {
+                font-size: 4.5rem;
+            }
+        }
+
+        .read-more {
+            margin-left: 28%;
+        }
+    }
+
+
+
+    .notification-section {
+        font-size: 0.9rem;
+    }
+
+    .carousel {
+        height: 351px;
+
+        &-title {
+            margin: 100px 10px 100px;
+            padding: 25px 0;
+            background-color: #B5B4A2;
+            border-radius: 4rem;
+
+            & h2 {
+                margin: 55px 10px;
+            }
+        }
+    }
+
+
+    .section-galeria {
+        padding: 10%;
+    }
+
+    .footer-body {
+        margin-top: 15%;
+
+        & .footer-image-credits {
+            padding: 1% 1%;
+            justify-content: unset;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        & .footer-list {
+            display: none;
+        }
+    }
+
+    .blog-list-footer {
+
+        ul {
+            padding: 0%;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+    }
+}

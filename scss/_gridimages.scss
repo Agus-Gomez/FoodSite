@@ -1,0 +1,44 @@
+/*Grids de imágenes*/
+
+.locals-galery .container .row img {
+    height: 100%;
+    border-radius: 7%;
+}
+
+/*Fondo de RestoBar*/
+.main-rb {
+    position: relative;
+    background-image: url(../images/iconos/CatWithEgg.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding: $main-image-pdd;
+}
+
+/*Fondo de Heladería*/
+.main-h {
+    position: relative;
+    background-image: url(../images/iconos/BlackCat_Ice_Cream_.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding: $main-image-pdd;
+}
+
+.main-caf {
+    position: relative;
+    background-image: url(../images/iconos/CoffeeCat.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding: $main-image-pdd;
+}
+
+.main-cont {
+    position: relative;
+    background-image: url(../images/iconos/CatContact.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top;
+    padding: $main-image-pdd;
+}
