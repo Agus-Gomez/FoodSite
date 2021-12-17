@@ -13,19 +13,18 @@
 
 .footer-image-credits {
     display: grid;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    justify-items: center;
+    justify-content: space-between;
     grid-template-areas:
         'row1'
         'row2'
         'row3';
     width: 100%;
-    padding: 5px 65px;
+    margin-left: 12%;
+    margin-right: 4%;
 
     div {
         text-align: center;
-        font-size: $font-16;
+        font-size: 1.2rem;
     }
 }
 
@@ -37,24 +36,23 @@
     grid-area: row2;
 }
 
+//Edición de imágenes de la parte de créditos
 .food-blog {
     grid-area: row3;
     margin: 2% 0;
 
     &-i img {
-        height: 2rem;
+        height: 4rem;
     }
 }
 
 .footer-list {
-    grid-row: 1/6;
-    display: flex;
+    grid-row: 1/5;
     margin-right: 14rem;
-    margin-left: 10rem;
 
     ul {
         list-style: none;
-        font-size: $font-16;
+        font-size: 1.2rem;
 
         li a {
             text-decoration: none;
@@ -66,19 +64,11 @@
 /*Edición de redes sociales e íconos*/
 .blog-list-footer {
     text-align: center;
-    padding-bottom: 1%;
-
-    ul li {
-        display: flex;
-        list-style: none;
-        display: inline-block;
-
-        img {
-            height: 2rem;
-        }
-    }
+    grid-row: 1/5;
 
     & H1 {
-        font-size: $font-40;
+        font-size: $font-52;
+        margin-top: 40%;
+        margin-left: 25%;
     }
 }
