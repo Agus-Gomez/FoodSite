@@ -222,7 +222,7 @@ h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     /*100%*/
     background: #ffc107;
     transition: .5s;
@@ -231,7 +231,7 @@ h2, h3, h4, h5, h6 {
   .card:hover .details {
     transform: perspective(2000px) rotateY(0deg); }
   .card .details .center {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background: #fff;
     position: absolute;
@@ -250,7 +250,8 @@ h2, h3, h4, h5, h6 {
     .card .details .center p {
       margin: 0.1rem 0;
       padding: 0;
-      color: #262626; }
+      color: #262626;
+      font-size: 1.3rem; }
     .card .details .center ul {
       margin: 0.1rem auto 0;
       padding: 0;
