@@ -107,7 +107,7 @@ h2, h3, h4, h5, h6 {
 
 /*Altura del texto de bienvenida*/
 .row {
-  margin-top: 10%; }
+  margin-top: 0%; }
 
 /*Galería de inicio del carrusel*/
 .section-galeria {

@@ -1,0 +1,123 @@
+.section_gallery {
+    width: 99%;
+    margin-top: 10%;
+}
+
+/* The card */
+.card_galeria {
+    margin-bottom: 10%;
+    position: relative;
+    height: 27rem;
+    width: 53rem;
+margin-left: 5%;
+    background-color: #FFF;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* Image on the left side */
+.left_sample_image {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    height: 400px;
+    width: 440px;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: rgba(247, 122, 76, 0.5) -5px 5px, rgba(247, 122, 76, 0.411) -10px 10px, rgba(247, 122, 76, 0.2) -15px 15px, rgba(247, 122, 76, 0.199) -20px 20px, rgba(247, 122, 76, 0.05) -25px 25px;
+    overflow: hidden;
+}
+
+/*object-fit: cover;*/
+/*object-position: center;*/
+img.left_image_design {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.right_text_card {
+    margin-left: 498px;
+    margin-right: 34px;
+}
+
+h1 {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    color: #4B4B4B;
+}
+/*Edición de la imagen de igor marty*/
+.author_of_blog {
+    background-color: #9ECAFF;
+    height: 30px;
+    width: 110px;
+    border-radius: 20px;
+}
+
+.author_of_blog img {
+    padding-top: 5px;
+    margin-left: 10px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    padding-top: 8px;
+    margin-right: 6px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.text_editor_review {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+p {
+    text-align: justify;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+
+/* Those futur buttons */
+ul {
+    margin-left: 150px;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    padding-right: 40px;
+    color: #7B7B7B;
+}
+
+/* Botón flotante azul */
+.float_button_custom {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    background-color: #1875D0;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
