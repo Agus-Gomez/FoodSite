@@ -1,70 +1,85 @@
-/*Header Section*/
-#header {
+/*INICIO HEADER NUEVO PRUEBA-------------------*/
+/*INICIO DEL NAV*/
+.header {
+    top: 0%;
+    /*el position hace que quede fijo el nav*/
     position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: #d3d2d19d;
 }
 
-/*Animaciones de Inicio*/
-.animate-navbar {
-    animation-duration: 0.9s;
+.clara-michi-logo {
+    width: 130px;
+    height: 120px;
+    cursor: pointer;
+    margin-left: 20px;
+    opacity: 0.9;
+    /*para que quede delante*/
+
 }
 
-.animate-welcome {
-    animation-duration: 1.8s;
+.menu-inicio {
+    position: absolute;
+    top: 15px;
+    left: 35%;
+    display: inline-block;
+    border: 2px solid #f9f8fdb6;
+    border-radius: 40px;
+    background-color:#f9f8fdb6;
+    /*esto no esta funcionando*/
+    animation: slide-in 1s ease-out;
 }
 
-/*Estilo de barra, Logo y portada*/
 
-/*Tamaño de Logo*/
-.container-fluid img {
-    width: 110px;
-}
-
-/*Barra de navegación*/
-.navbar {
-    padding: 50px 0;
-
-
-    &-brand {
-        margin: 0% 25% 0% 10%;
-        font-weight: bold;
-        font-size: $font-16;
+.lista-categorias {
+    ul {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 0 30px;
+        list-style-type: none;
     }
 
-    .collapse &-nav {
-        background-color:#f35a2385;
-        border-radius: 2rem;
+    li {
+        border: 2px solid transparent;
+        border-radius: 40px;
+        padding: 10px;
+        /*NO ESTA TOMANDO*/
+        transition: background 0.2s;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:hover {
+            background: #ffc617;
+            border-radius: 40px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+
+
+    a {
+        color: #32245f;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s;
     }
 }
 
-/*Texto de barra de navegación*/
-.nav-item {
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-left: 50px;
-    padding-right: 50px;
 
 
-    & a {
-        color: $light-color !important;
-    }
-}
-
-//Revisar si el color azúl realmente está cambiando algo
-.nav-link {
-    letter-spacing: 2px;
-    font-size: $font-24;
-    font-weight: bold;
 
 
-    /*Color del botón al posar el mouse*/
-    &:hover {
-        background: #b15c5c;
-        border-radius: 10px;
-    }
-}
+
+
+
+
+
 
 /*Texto de Bienvenida*/
 .main {

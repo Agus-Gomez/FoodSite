@@ -7,7 +7,7 @@
 body {
   font-family: "PT Sans Narrow", sans-serif;
   color: black;
-  background: radial-gradient(circle at 100% 50%, transparent 20%, rgba(255, 255, 255, 0.144) 21%, rgba(255, 255, 255, 0.144) 34%, transparent 35%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 255, 255, 0.144) 21%, rgba(255, 255, 255, 0.144) 34%, transparent 35%, transparent) 0 -50px;
+  background: radial-gradient(circle at 100% 50%, transparent 20%, rgba(255, 255, 255, 0.246) 21%, rgba(255, 255, 255, 0.246) 34%, transparent 35%, transparent), radial-gradient(circle at 0% 50%, transparent 20%, rgba(255, 255, 255, 0.246) 21%, rgba(255, 255, 255, 0.246) 34%, transparent 35%, transparent) 0 -50px;
   background-color: #a1bfc4;
   background-size: 75px 100px; }
 
@@ -17,57 +17,69 @@ h1 {
   font-size: 10rem;
   font-weight: bold; }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Staatliches", cursive;
   text-align: center; }
 
-/*Header Section*/
-#header {
+/*INICIO HEADER NUEVO PRUEBA-------------------*/
+/*INICIO DEL NAV*/
+.header {
+  top: 0%;
+  /*el position hace que quede fijo el nav*/
   position: fixed;
   width: 100%;
-  z-index: 1;
-  background-color: #d3d2d19d; }
+  z-index: 1; }
 
-/*Animaciones de Inicio*/
-.animate-navbar {
-  animation-duration: 0.9s; }
+.clara-michi-logo {
+  width: 130px;
+  height: 120px;
+  cursor: pointer;
+  margin-left: 20px;
+  opacity: 0.9;
+  /*para que quede delante*/ }
 
-.animate-welcome {
-  animation-duration: 1.8s; }
+.menu-inicio {
+  position: absolute;
+  top: 15px;
+  left: 35%;
+  display: inline-block;
+  border: 2px solid #f9f8fdb6;
+  border-radius: 40px;
+  background-color: #f9f8fdb6;
+  /*esto no esta funcionando*/
+  animation: slide-in 1s ease-out; }
 
-/*Estilo de barra, Logo y portada*/
-/*Tamaño de Logo*/
-.container-fluid img {
-  width: 110px; }
+.lista-categorias ul {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none; }
 
-/*Barra de navegación*/
-.navbar {
-  padding: 50px 0; }
-  .navbar-brand {
-    margin: 0% 25% 0% 10%;
-    font-weight: bold;
-    font-size: 1rem; }
-  .collapse .navbar-nav {
-    background-color: #f35a2385;
-    border-radius: 2rem; }
+.lista-categorias li {
+  border: 2px solid transparent;
+  border-radius: 40px;
+  padding: 10px;
+  /*NO ESTA TOMANDO*/
+  transition: background 0.2s; }
+  .lista-categorias li:not(:last-child) {
+    margin-right: 40px; }
+  .lista-categorias li:hover {
+    background: #ffc617;
+    border-radius: 40px; }
+    .lista-categorias li:hover a {
+      color: black; }
 
-/*Texto de barra de navegación*/
-.nav-item {
-  font-weight: 600;
+.lista-categorias a {
+  color: #32245f;
+  text-decoration: none;
   text-transform: uppercase;
-  padding-left: 50px;
-  padding-right: 50px; }
-  .nav-item a {
-    color: white !important; }
-
-.nav-link {
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  /*Color del botón al posar el mouse*/ }
-  .nav-link:hover {
-    background: #b15c5c;
-    border-radius: 10px; }
+  transition: color 0.2s; }
 
 /*Texto de Bienvenida*/
 .main {
@@ -109,58 +121,30 @@ h2, h3, h4, h5, h6 {
 .row {
   margin-top: 0%; }
 
-/*Galería de inicio del carrusel*/
-.section-galeria {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+/*CARRUSEL DE LOCALES RECIENTES------*/
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px; }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  transition: 0.35s ease-in; }
-  .overlay H3 {
-    position: absolute;
-    border-radius: 20%;
-    padding: 12%;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
+.margin-carusel-custom {
+  margin-top: 10rem;
+  margin-left: 10%;
+  margin-right: 2%; }
 
-.carousel-indicators {
-  margin-bottom: 0%; }
+.img-carrusel {
+  height: 27rem;
+  width: 25rem; }
+  .img-carrusel img {
+    margin-left: 10px;
+    height: 100%;
+    border-radius: 1.5rem;
+    background-size: cover;
+    background-position: center center; }
 
-.carousel {
-  width: 640px;
-  height: 720px;
-  /*Info del local de comida y carrusel*/ }
-  .carousel-title {
-    margin: 100px 400px 100px;
-    padding: 10px 0;
-    background-color: #948b8593;
-    border-radius: 4rem; }
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.541);
-    border-radius: 4rem;
-    margin-bottom: 130px; }
-  .carousel-item p {
-    font-size: 1.5rem; }
+.carousel-button {
+  width: 4%; }
 
-.imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10%;
-  max-width: 90vw;
-  margin-right: 5px;
-  max-height: 90vh;
-  margin-bottom: 5px; }
-
+/*FIN DEL CARRUSEL*/
 /*Grids de imágenes*/
 .locals-galery .container .row img {
   height: 100%;

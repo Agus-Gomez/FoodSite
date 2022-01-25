@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" crossorigin="anonymous">
 
 
     <!--CSS BOOTSTRAP -->
@@ -34,123 +34,137 @@
 </head>
 
 <body>
+
+    <!--INICIO DEL NAV-->
     <header class="header">
 
-        <!-- HEADER SECTION -->
-        <section id="header">
-            <div class="animate-navbar animate__animated animate__fadeInDown">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid">
-                        <a href="./index.html" class="navbar-brand"> <img src="./images/iconos/CatLogo.webp"
-                                alt="CatLogo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle Navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a href="./pages/Cafeteria.html" class="nav-link">Cafetería</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./pages/RestoBar.html" class="nav-link">RestoBar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./pages/Heladeria.html" class="nav-link">Heladería</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./pages/Contacto.html" class="nav-link">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </section>
-        <!--HEADER SECTION END-->
+        <nav class="menu-inicio">
+            <div class="lista-categorias">
+                <ul>
+                    <li><a href="#0">Home</a></li>
+                    <li><a href="#0">About</a></li>
+                    <li><a href="#0">Clients</a></li>
+                    <li><a href="#0">Services</a></li>
+                </ul>
 
-        <!--MAIN SECTION-->
-        <section class="main">
-            <div class="container">
-                <div class="row">
-                    <div class=" animate-welcome animate__animated animate__fadeInLeft">
-                        <div class="col-sm-12 col-md-6">
-                            <H4>BIENVENIDO A</H4>
-                            <H1>ClaraMichi</H1>
-                            <p>Nos gusta comer, escribir y descubrir cosas nuevas, gastar poco y contárselo a todo el
-                                mundo;
-                                Te mostramos los locales de Buenos Aires más populares para disfrutar de la mejor
-                                comida!
-                            </p>
+        </nav>
+        <img class="clara-michi-logo" src="./images/iconos/clara-michi-logo.png" alt="Imagenes">
+    </header>
+    <!--FIN DEL NAV-->
 
-                            <a href="" class="read-more">Bon Appétit!</a>
-                        </div>
+
+
+
+
+
+    <!--MAIN SECTION-->
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class=" animate-welcome animate__animated animate__fadeInLeft">
+                    <div class="col-sm-12 col-md-6">
+                        <H4>BIENVENIDO A</H4>
+                        <H1>ClaraMichi</H1>
+                        <p>Nos gusta comer, escribir y descubrir cosas nuevas, gastar poco y contárselo a todo el
+                            mundo;
+                            Te mostramos los locales de Buenos Aires más populares para disfrutar de la mejor
+                            comida!
+                        </p>
+
+                        <a href="" class="read-more">Bon Appétit!</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--MAIN SECTION END-->
+        </div>
+    </section>
+    <!--MAIN SECTION END-->
 
     </header>
 
+    <!---------------INICIO DEL CARRUSEL------------->
 
-    <H2 class="carousel-title">Locales
-        Recientes</H2>
+    <div class=" margin-carusel-custom text-center container">
+        <div class="row mb-2">
+            <div class="latest-locals-text">
+                <h3>Carousel with outer controls</h3>
 
-    <section class="section-galeria">
-
-
-        <!--MUESTRA DE LOCALES RECIENTES-->
-
-        <div id="carousel-inicio" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
             </div>
-            <div class="imagen">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/Cafeterias/Matcha Point/matchapointFood.webp" class="d-block w-100"
-                            alt="Bizcocho con frutas de Matcha Point">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>Matcha Point</h4>
-                            <p>Bizcocho de Matcha con frutas y crema de decoración</p>
-                        </div>
+        </div>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-1 align-items-center justify-content-center carousel-button">
+                <a role="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <div class="carousel-nav-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+                        </svg>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./images/RestoBar/EggsNGreens/EggsNGreensBrunch.webp" class="d-block w-100"
-                            alt="Pizza de Alchemy B.A">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>Eggs & Greens</h4>
-                            <p>Brunch variado de frutas, verduras y jugo de naranja</p>
+                </a>
+            </div>
+            <div class="col-md-11">
+                <!--Start carousel-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/Cafeterias/AngelicaDeliCoffee/AngelaDeliCoffeeBrunch.webp">
+                                </div>
+
+
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/Heladerias/Ainara Helados/AinaraHeladosVeganos.webp">
+                                </div>
+
+
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/RestoBar/AdelaVintage/AdelaVintageBrunch.webp">
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/Heladerias/Bears Helados/BearsHelados.webp" class="d-block w-100">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>Bears Helados</h4>
-                            <p>Helado en vaso de chocolate amargo y tramontana.</p>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/Cafeterias/CafeNerea/cafenereaBrunch.webp">
+                                </div>
+
+
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/Heladerias/Alchemy.BA/alchemy.baHeladoWafle.webp">
+                                </div>
+
+
+                                <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
+                                    <img src="./images/RestoBar/EggsNGreens/EggsNGreensBrunch.webp">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--End carousel-->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-inicio" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-inicio" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-1 align-items-center justify-content-center carousel-button"><a role="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <div class="carousel-nav-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
         </div>
+    </div>
 
-    </section>
+
+    <!----------------FIN DEL CARRUSEL--------------->
+
 
     <!--INICIO DE FOOTER-->
 
@@ -208,12 +222,12 @@
     <!--JAVASCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
 
     <!--SEPARATE-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
+    </script>
 
     <!--JAVASCRIPT AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -221,5 +235,3 @@
         AOS.init();
     </script>
 </body>
-
-</html>
