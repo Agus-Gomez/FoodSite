@@ -19,6 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
 
+    <!--estilos para cards de locales de comida-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
     <!--CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -30,42 +34,26 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>
 
-    <!-- HEADER SECTION -->
-    <section id="header">
-        <div class="animate-navbar animate__animated animate__fadeInDown">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a href="../index.html" class="navbar-brand"> <img src="../images/iconos/CatLogo.png"
-                            alt="CatLogo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="../pages/Cafeteria.html" class="nav-link">Cafetería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/RestoBar.html" class="nav-link">RestoBar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Heladeria.html" class="nav-link">Heladería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Contacto.html" class="nav-link">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
-    <!--HEADER SECTION END-->
+    <!--INICIO DEL NAV-->
+    <header class="header">
+
+
+        <nav class="menu-inicio">
+            <div class="lista-categorias">
+                <ul>
+                    <li><a href="./Cafeteria.html">Cafetería<a></li>
+                    <li><a href="./Heladeria.html">Heladería</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./RestoBar.html">RestoBar</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="../index.html" class="navbar-brand"><img class="clara-michi-logo"
+                src="../images/iconos/clara-michi-logo.png" alt="ClaraMichi logo"></a>
+    </header>
+    <!--FIN DEL NAV-->
 
     <!--MAIN SECTION-->
     <section class="main-h">
@@ -80,341 +68,314 @@
     </section>
     <!--MAIN SECTION END-->
 
-    <section>
+<!------------INICIO DE CARDS DE LOCALES DE COMIDA------------->
 
-        <h3>BARES CON LA MEJOR TEMÁTICA</h3>
+<section class="cards-locales">
 
-        <div class="locals-galery">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Ainara Helados/AinaraHeladosVeganos.webp"
-                                    class="img-fluid" alt="Ainara Helados.">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Ainara helados<br></h1>
-                                    <p>. El espacio es chiquito pero podés quedarte tomando helado o pedir para
-                                        llevar.<br>
-                                        . Tiene un montón de variedad de sabores y los precios son iguales que un helado
-                                        tradicional.<br>
-                                        . Los destacados son cheesecake con frutos rojos, maracuyá, chocolate Ainara
-                                        (con frambuesas y avellanas) y Mantecol.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+    <div class="locales">
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Ainara Helados/ainara helados veganos.webp">
                     </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Alchemy.BA/alchemy.baHeladoWafle.webp" class="img-fluid"
-                                    alt="Alchemy >BA personalizados">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Alchemy BA<br></h1>
-                                    <p>. Heladería con sabores exóticos que usan la ciencia del nitrógeno líquido para
-                                        preparar los helados más cremosos de Buenos Aires.<br>
-                                        . Tienen sabores de TODO como queso azul, fernet, remolacha, campari, calabaza,
-                                        provolone, cerveza, Martini entre otros.<br>
-                                        . También cuentan con comidas saladas como pizzas y tragos para pasar una noche
-                                        tranquila.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/D.pop Helados/D.PopHelados.webp" class="img-fluid"
-                                    alt="Bocha de helado negro de coco con carbón activado de D.pop Helados">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>D.pop Helados<br></h1>
-                                    <p>. Postres gourmet en paleta con un montón de sabores y varios de ellos son sin
-                                        tacc o veganos.<br>
-                                        . La presentación es divina y se pueden personalizar para el evento por ej
-                                        Navidad o Año nuevo.<br>
-                                        . Dentro tienen una textura como si fuera una crema o mousse.<br>
-                                        . Se pueden tomar pedidos o ir al local y llevarte el que más te guste.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Finde Heladería/FindeHeladeriaPostre.webp"
-                                    class="img-fluid" alt="Finde heladería">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Finde heladería<br></h1>
-                                    <p>. El sitio es súper lindo y la decoración me pareció un encanto.<br>
-                                        . No sólo venden helados sino que tienen Brunchs, cafés, postres y
-                                        pastelería.<br>
-                                        . Cuenta con terraza con muchos espejos y plantas.<br>
-                                        . Entre los sabores se destacan los de pie con limón, pistacho y brownie con DDL
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Heladería Flamingo/heladeriaflamingoBlack.webp"
-                                    class="img-fluid" alt="Heladería Flamingo">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Heladería Flamingo<br></h1>
-                                    <p>. Heladería con sabores clásicos y bien cremosos (el más destacado es el
-                                        chocolate negro de carbón activado y gusto a coco)<br>
-                                        . El local es grande y cuenta con mesas separadas para disfrutar tu helado sin
-                                        problemas.<br>
-                                        . Tienen opciones de cafés y sándwiches de jamón y queso.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Heladería Goodsten/HeladeríaGoodsten.webp"
-                                    class="img-fluid" alt="Heladería Italia">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Heladería Goodsten<br></h1>
-                                    <p>. Local tranquilo con mesas dentro y fuera para disfrutar del clima.<br>
-                                        . Cuentan con paletas, cookies rellenas, y los bocaditos de helado bañados en
-                                        chocolate que vendrían a ser como unos chomps.<br>
-                                        . Por lo último está el cool box donde vos elegís los toppings de helado y ellos
-                                        te lo mezclan tal como vos lo pedís
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Bears Helados/BearsHelados.webp" class="img-fluid"
-                                    alt="Bears Helados">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Bears Helados<br></h1>
-                                    <p>. La decoración es muy divertida y simpática, desde peluches que están en el
-                                        local hasta las paredes y los mismos vasitos.<br>
-                                        . El helado es muy rico y cremoso sobre todo los sabores Sambayón con DDL y
-                                        Chololate Sirius Black (con un guiño a los fanáticos de Harry Potter)<br>
-                                        .Destaco también la atención, súper amables y hasta nos dejaron probar algunos
-                                        gustos.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Nausicaa/NausicaaCaja.webp" class="img-fluid"
-                                    alt="helado con baño de chocolate alargado de Nausicaa">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Nausicaa<br></h1>
-                                    <p>. Lugar pequeño con mesas afuera donde podes disfrutar con tu mascota.<br>
-                                        . Tienen una caja de degustación de 6 sabores para conocer más gustos o repetir
-                                        los que ya probaste (les recomiendo el choco blanco con matcha)<br>
-                                        . A demás de los helados cuentan con una sección de cafetería con pastelería
-                                        dulce y salada.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/Heladerias/Vibean/vibeanheladeriaPinguino.webp" class="img-fluid"
-                                    alt="batido de chocolate con postre pingüino de Via Bean">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Vibean<br></h1>
-                                    <p>. Muchos gustos de milkshakes como oreo, nutella, kínder, pingüinito, frutilla,
-                                        entre otros.<br>
-                                        . El local cuenta con mesas espaciadas para disfrutar el batido sin problemas
-                                        (aunque no tienen toldo)
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <!--Cambiar el featured por los símbolos de comida-->
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p>
+                        <a class="read-more glyphicon glyphicon-chevron-down"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!--INICIO DE FOOTER-->
-
-    <footer class="footer-custom">
-        <div class="footer-body">
-            <div class="footer-image-credits">
-
-                <div class="credits-locals">
-
-                    <p>Créditos de las imágenes a todos los locales mostrados</p>
-
-                </div>
-
-                <div class="blog-inspiration">
-                    <p>Inspiración para el blog</p>
-                </div>
-
-                <div class="food-blog">
-                    <p>Entre Tostadas</p>
-                </div>
-                <div class="food-blog-i">
-                    <a href=""><img src="../images/iconos/redes sociales/Instagram.webp" alt="Instagram link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                </div>
-
-                <div class="blog-list-footer">
-                    <h1>ClaraMichi</h1>
-                </div>
+        </article>
 
 
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="./pages/Cafeteria.html">Cafetería</a></li>
-                        <li><a href="./pages/RestoBar.html">RestoBar</a></li>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/Heladeria.html">Heladería</a></li>
-                        <li><a href="./pages/Contacto.html">Contacto</a></li>
+        <article class="locales-columna">
 
-                        <div class="food-blog-i">
-                            <a href=""><img src="../images/iconos/redes sociales/Instagram.webp"
-                                    alt="Instagram link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                        </div>
-                    </ul>
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Alchemy.BA/alchemy .ba helado wafle.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
                 </div>
             </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Bears Helados/bears helados.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/D.pop Helados/d.pop helados.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Finde Heladería/finde heladeria postre.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Heladería Flamingo/heladeria flamingo black.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Heladería Goodsten/heladería goodsten.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Helados Miau/helados miau ice-cream.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Nausicaa/nausicaa helado cono.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="locales-columna">
+
+            <div class="container-fluid">
+                <div class="blog-card">
+                    <div class="card-image-container col-sm-6 col-xs-6">
+                        <img src="../images/Heladerias/Vibean/vibean heladeria pinguino.webp">
+                    </div>
+                    <div class="card-body col-sm-6 col-xs-6">
+                        <p class="tagline text-center">Featured</p>
+                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <div class="divider"></div>
+                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad aliquam a
+                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                            At quasi
+                            magni voluptates molestiae aperiam</p><a
+                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+    </div>
+</section>
+
+
+<!------------FIN DE CARDS DE LOCALES DE COMIDA------------->
+
+<!--INICIO DE FOOTER-->
+
+<footer class="footer-custom">
+    <div class="footer-body">
+        <div class="footer-image-credits">
+
+            <div class="credits-locals">
+
+                <p>Créditos de las imágenes a todos los locales mostrados</p>
+
+            </div>
+
+            <div class="blog-inspiration">
+                <p>Inspiración para el blog</p>
+            </div>
+
+            <div class="food-blog">
+                <p>Entre Tostadas</p>
+            </div>
+            <div class="food-blog-i">
+                <a href=""><img src="../images/iconos/redes sociales/Instagram.webp" alt="Instagram link"></a>
+                <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
+                <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
+                <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
+            </div>
+
+            <div class="blog-list-footer">
+                <h1>ClaraMichi</h1>
+            </div>
+
+
+            <div class="footer-list">
+                <ul>
+                    <li><a href="./pages/Cafeteria.html">Cafetería</a></li>
+                    <li><a href="./pages/RestoBar.html">RestoBar</a></li>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/Heladeria.html">Heladería</a></li>
+                    <li><a href="./pages/Contacto.html">Contacto</a></li>
+
+                    <div class="food-blog-i">
+                        <a href=""><img src="../images/iconos/redes sociales/Instagram.webp" alt="Instagram link"></a>
+                        <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
+                        <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
+                        <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
+                    </div>
+                </ul>
+            </div>
         </div>
+    </div>
 
-    </footer>
+</footer>
 
-    <!--JAVASCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
-    <!--SEPARATE-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-
-    <!--JAVASCRIPT AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+<!--JAVASCRIPT BOOTSTRAP-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+
+<!--SEPARATE-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+
+<!--JAVASCRIPT AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

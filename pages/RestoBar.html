@@ -17,53 +17,44 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
 
+<!--estilos para cards de locales de comida-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
     <!--CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--ANIMACION ANIMATE.STYLE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/Estilos_galeria.css">
 </head>
 
 <body>
 
-    <!-- HEADER SECTION -->
-    <section id="header">
-        <div class="animate-navbar animate__animated animate__fadeInDown">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a href="../index.html" class="navbar-brand"> <img src="../images/iconos/CatLogo.png"
-                            alt="CatLogo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+  
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="../pages/Cafeteria.html" class="nav-link">Cafetería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/RestoBar.html" class="nav-link">RestoBar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Heladeria.html" class="nav-link">Heladería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Contacto.html" class="nav-link">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+        <!--INICIO DEL NAV-->
+        <header class="header">
+
+
+            <nav class="menu-inicio">
+                <div class="lista-categorias">
+                    <ul>
+                        <li><a href="./Cafeteria.html">Cafetería<a></li>
+                        <li><a href="./Heladeria.html">Heladería</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./RestoBar.html">RestoBar</a></li>
+                    </ul>
                 </div>
             </nav>
-        </div>
-    </section>
-    <!--HEADER SECTION END-->
+            <a href="../index.html" class="navbar-brand"><img class="clara-michi-logo"
+                    src="../images/iconos/clara-michi-logo.png" alt="ClaraMichi logo"></a>
+        </header>
+        <!--FIN DEL NAV-->
 
     <!--MAIN SECTION-->
     <section class="main-rb">
@@ -77,278 +68,246 @@
         </div>
     </section>
     <!--MAIN SECTION END-->
+    <!------------INICIO DE CARDS DE LOCALES DE COMIDA------------->
+<div class="grid-locals-container">
+    <section class="cards-locales">
 
-    <section>
+        <div class="locales">
 
-        <h3>BARES CON LA MEJOR TEMÁTICA</h3>
+            <article class="locales-columna">
 
-        <div class="locals-galery">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/AdelaVintage/AdelaVintageBrunch.webp" class="img-fluid"
-                                    alt="Tostada con huevo frito y frutas como acompañamiento de Adela Vintage.">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Adela Vintage<br></h1>
-                                    <p>. Carta amplia con 2 opciones de brunch, alternativas de desayunos,
-                                        almuerzos, picoteo y demás.<br>
-                                        . Café en tazón con opción de leche de almendra (+ $80).<br>
-                                        . Destaco la reversión del avocadotoast, llenadora, con bastante palta y huevo a
-                                        la chapa, el bagel es grande y con buen relleno. De lo dulce, la granola con
-                                        miel es lo mejor y el limoncito glaseado estaba delicioso.
-
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Adela Vintage/adela vintage brunch.webp">
                         </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/EggsNGreens/EggsNGreensBrunch.webp" class="img-fluid"
-                                    alt="revuelto de huevos con palta y tostadas de Eggs & Greens Brunch">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Eggs & Greens<br></h1>
-                                    <p>. propuesta de comida saludable y natural, pero no por eso es menos sabrosa<br>
-                                        . Muchas opciones sin tacc y apto vegan/vegetarianas<br>
-                                        . Tienen opciones de brunch ya armadas para 2 a muy buen precio<br>
-                                        . Para destacar está el “huevo perfecto” o los huevos nube
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--MODIFICAR LA IMAGEN DE KOI DUMPLINGS-->
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/Koi Dumplings/AmazoniaBrasasBrunch.webp" class="img-fluid"
-                                    alt="Koi Dumplings">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Koi Dumplings<br></h1>
-                                    <p>. Estética y carta súper variada.<br>
-                                        . Sugieren para compartir un combo de dumplings, buns y baos (en este caso
-                                        elegimos todos veganos, pero también tienen con carne) de los 3 el bun vegan
-                                        kevap me pareció delicioso y para cerrar te traen una galletita de la fortuna.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <!--Cambiar el featured por los símbolos de comida-->
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p>
+                            <a class="read-more glyphicon glyphicon-chevron-down"></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/Lado V/LadoVFood.webp" class="img-fluid"
-                                    alt="hamburguesas, nachos y papas con chedar de Lado V">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Lado V<br></h1>
-                                    <p>. Hermoso lugar con espacio en la vereda y “adentro” (en realidad es todo al aire
-                                        libre)<br>
-                                        . Destaco con un 10/10 los Nuggets de grígola.<br>
-                                        . Buenos tragos, linda atención y muchos espacios con distintos detalles para
-                                        los amantes de las sesiones de fotos.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Club de la Birra/club de la birra comida.webp">
                         </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/Letit V/LetitVBrunch.webp" class="img-fluid"
-                                    alt="Brunch variado de arrollado de verduras y café de Letit V">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Letit V<br></h1>
-                                    <p>. Todo su menú es vegano y gluten free con propuesta de “vrunch”<br>
-                                        . Local pequeño pero súper estético, y tiene un espacio en la vereda bien armado
-                                        con sombrillas.<br>
-                                        . Café de especial con leche de almendra y la limonada es bien fría con menta y
-                                        jengibre.<br>
-                                        . Destaco la focaccia avotoast, y el V-urrito cajun con vegetales<br>
-                                        . Lo dulce es bastante potente
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/Palacio Dor/PalacioD'orBrunch.webp" class="img-fluid"
-                                    alt="Brunch variado de Palacio D'Or">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Palacio D'or<br></h1>
-                                    <p>. Jardín inmenso con una fuente y un salón techado para eventos
-                                        y decoraciones pop.<br>
-                                        . Brunch vegetariano adaptado con un bagel con huevo poché, tarta de calabaza y
-                                        unos chips de batata<br>
-                                        . De entrada traen un bocadito (falafel o carne).<br>
-                                        . Si quieren se puede pedir 1 sólo brunch entre 2 agregando una infusión
-                                        (pagarían el brunch, la infusión extra y los 2 cubiertos)
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4 mt-3 col-lg-4">
+            </article>
 
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/Spring Vegetariano/boticariobarFood.webp" class="img-fluid"
-                                    alt="Spring Vegetariano">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Spring Vegetariano<br></h1>
-                                    <p>. Todo su menú es vegetariano con un montón de opciones veganas también. El menú
-                                        tiene 2 partes, platos occidentales (hamburguesas, risottos y pastas) y platos
-                                        orientales como tempura, rollos primavera, baos, curry (picante) y fideos de
-                                        arroz con verduras.<br>
-                                        . Local muy lindo y espacioso.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Eggs N Greens/eggs n greens brunch.webp">
                         </div>
-                    </div>
-
-
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/T & B Sushi Bar/aleppococinasiria3.webp" class="img-fluid"
-                                    alt="T&B Sushi Bar">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>T&B Sushi Bar<br></h1>
-                                    <p>. Ambientación asiática con varias mesitas afuera y dentro bien espaciadas.<br>
-                                        . De cortesía te sirven unas bolitas fritas de arroz rellenas queso
-                                        philadelpia<br>
-                                        . Tienen un montón de variedad de piezas de sushi y me gustó que las piezas son
-                                        grandes y vinieron bien presentadas. Mis favoritas fueron las vegetarianas con
-                                        mango y a mi acompañante le encantaron las de salmón.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-3 col-lg-4">
-
-                        <div class="card">
-                            <div class="image">
-                                <img src="../images/RestoBar/VinoTintoCocina/VinoTintoCocinaBrunch.webp"
-                                    class="img-fluid"
-                                    alt="Panqueques con manzana y hamburguesas de Vino Tinto Cocina Brunch">
-                            </div>
-                            <div class="details">
-                                <div class="center">
-                                    <h1>Vino Tinto Cocina<br></h1>
-                                    <p>. Lugar muy acogedor, bien iluminado y con mesitas afuera.<br>
-                                        . Opciones de desayuno, almuerzo que van variando con mucha bebida.<br>
-                                        . Destaco la hamburguesa veggie con medallón de mandioca y cebollita crispy.<br>
-                                        Los panqueques si bien son finitos estaban muy buenos y la key lime pie fue
-                                        súper cremosa.<br>
-                                        . Pedir por pasos para disfrutar cada etapa y reducir el tiempo de espera, si no
-                                        llegan a terminarse todo, se puede pedir para llevar.
-                                    </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Francisca Del Fuego/francisca del fuego pizza.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Koi Dumplings/koi dumplings comida.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Lado V/lado v food.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Letit V/letit v brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Palacio Dor/palacio d' or brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/Spring Vegetariano/boticario bar food.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/RestoBar/VinoTinto Cocina/vino tinto cocina brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+
         </div>
     </section>
+</div>
+
+    <!------------FIN DE CARDS DE LOCALES DE COMIDA------------->
 
 
     <!--INICIO DE FOOTER-->
@@ -404,11 +363,7 @@
 
     </footer>
 
-    <!--JAVASCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-
+    
     <!--SEPARATE-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

@@ -21,11 +21,11 @@
 .menu-inicio {
     position: absolute;
     top: 15px;
-    left: 35%;
+    left: 34%;
     display: inline-block;
     border: 2px solid #f9f8fdb6;
     border-radius: 40px;
-    background-color:#f9f8fdb6;
+    background-color: #f9f8fdb6;
     /*esto no esta funcionando*/
     animation: slide-in 1s ease-out;
 }
@@ -36,9 +36,10 @@
         position: relative;
         display: flex;
         flex: 1 1 auto;
-        margin: 0;
+        margin: 7px;
         padding: 0 30px;
         list-style-type: none;
+        font-size: 200%;
     }
 
     li {

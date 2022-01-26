@@ -17,12 +17,15 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
         rel="stylesheet">
 
+    <!--estilos para cards de locales de comida-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
     <!--CSS BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--ANIMACION ANIMATE.STYLE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
@@ -30,42 +33,26 @@
 </head>
 
 <body>
-    <header class="header">
+  
 
-        <!-- HEADER SECTION -->
-        <section id="header">
-            <div class="animate-navbar animate__animated animate__fadeInDown">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid">
-                        <a href="../index.html" class="navbar-brand"> <img src="../images/iconos/CatLogo.webp"
-                                alt="CatLogo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle Navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+        <!--INICIO DEL NAV-->
+        <header class="header">
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a href="../pages/Cafeteria.html" class="nav-link">Cafetería</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../pages/RestoBar.html" class="nav-link">RestoBar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../pages/Heladeria.html" class="nav-link">Heladería</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../pages/Contacto.html" class="nav-link">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </section>
-        <!--HEADER SECTION END-->
+
+            <nav class="menu-inicio">
+                <div class="lista-categorias">
+                    <ul>
+                        <li><a href="./Cafeteria.html">Cafetería<a></li>
+                        <li><a href="./Heladeria.html">Heladería</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./RestoBar.html">RestoBar</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="../index.html" class="navbar-brand"><img class="clara-michi-logo"
+                    src="../images/iconos/clara-michi-logo.png" alt="ClaraMichi logo"></a>
+        </header>
+        <!--FIN DEL NAV-->
 
         <!--MAIN SECTION-->
         <section class="main-caf">
@@ -79,394 +66,291 @@
             </div>
         </section>
         <!--MAIN SECTION END-->
-    </header>
+ 
 
+    <!------------INICIO DE CARDS DE LOCALES DE COMIDA------------->
 
-    <h3>GALERÍA DE CAFETERÍA</h3>
-    <section class="section_gallery">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/AngelicaDeliCoffee/AngelaDeliCoffeeBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
+    <section class="cards-locales">
+
+        <div class="locales">
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Alma Canela/alma canela brunch.webp">
                         </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/CafeNerea/cafenereaBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <!--Cambiar el featured por los símbolos de comida-->
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p>
+                            <a class="read-more glyphicon glyphicon-chevron-down"></a>
                         </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
                     </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
                 </div>
-            </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Angelica DeliCoffee/angela deli coffee brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Cafe Nerea/cafe nerea brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Cariño Bar/carinio bar brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Hotel Savoy BsAs/hotel savoy bs as brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Luce Cocina/luce cocina brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Matcha Point/matcha point brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Merope BA/merope b.a brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Mkaffee/mkafee brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="locales-columna">
+
+                <div class="container-fluid">
+                    <div class="blog-card">
+                        <div class="card-image-container col-sm-6 col-xs-6">
+                            <img src="../images/Cafeterias/Obrador de Panes/obrador de panes brunch.webp">
+                        </div>
+                        <div class="card-body col-sm-6 col-xs-6">
+                            <p class="tagline text-center">Featured</p>
+                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <div class="divider"></div>
+                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Ad aliquam a
+                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
+                                At quasi
+                                magni voluptates molestiae aperiam</p><a
+                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/CariñoBar/CarinioBarBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/HotelSavoyBsAs/HotelSavoyBsAsBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/LuceCocina/lucecocinaBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/Matcha Point/matchapointFood.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/MeropeBA/Merope.BABrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/Mkaffee/MkaffeeMerienda.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/Obrador de Panes/ObradorDePanesBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card_galeria">
-                    <div class="left_sample_image"><img class="left_image_design"
-                            src="../images/Cafeterias/Obrador de Panes/ObradorDePanesBrunch.webp" />
-                    </div>
-                    <div class="right_text_card">
-                        <h1>Why you Need More Magnesium in Your Daily Diet</h1>
-                        <div class="author_of_blog"><img src="https://randomuser.me/api/portraits/men/95.jpg" />
-                            <h2>Igor MARTY</h2>
-                        </div>
-                        <div class="text_editor_review"></div>
-                        <p>Magnesium is one of the six essential macro-minerals that is required by the body for energy
-                            production
-                            and synthesis of protein and enzymes. It contributes to the development of bones and most
-                            importantly it
-                            is responsible for synthesis of your DNA and RNA. A new report that has appeared in
-                            theBritish
-                            Journal
-                            of Cancer, gives you another reason to add more magnesium to your diet...</p>
-                    </div>
-
-                    <ul>
-                        <li><i class="fa fa-eye fa-2x"></i></li>
-                        <li><i class="fa fa-heart-o fa-2x"></i></li>
-                        <li><i class="fa fa-envelope-o fa-2x"></i></li>
-                        <li><i class="fa fa-share-alt fa-2x"></i></li>
-                    </ul>
-                    <div class="float_button_custom"><i class="fa fa-arrow-down fa-3x"> </i></div>
-                </div>
-            </div>
-        </div>
-
     </section>
+
+
+    <!------------FIN DE CARDS DE LOCALES DE COMIDA------------->
 
     <!--INICIO DE FOOTER-->
 
-    <footer class="footer-custom">
-        <div class="footer-body">
-            <div class="footer-image-credits">
-
-                <div class="credits-locals">
-
-                    <p>Créditos de las imágenes a todos los locales mostrados</p>
-
-                </div>
-
-                <div class="blog-inspiration">
-                    <p>Inspiración para el blog</p>
-                </div>
-
-                <div class="food-blog">
-                    <p>Entre Tostadas</p>
-                </div>
-                <div class="food-blog-i">
-                    <a href=""><img src="../images/iconos/redes sociales/Instagram.webp" alt="Instagram link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                </div>
-
-                <div class="blog-list-footer">
-                    <h1>ClaraMichi</h1>
-                </div>
-
-
-                <div class="footer-list">
+    <footer class="footer-inicio">
+        <div class="logo"><img src="../images/iconos/clara-michi-logo.png" alt=""></div>
+        <div class="footer-container">
+            <div class="footer-col-1">
+                <h3>CONTACTO</h3>
+                <p>Aceptamos recomendaciones! Puedes decirnos tu local favorito</p>
+                <h4>AQUÍ</h4>
+            </div>
+            <div class="footer-col-2">
+                <h3>SÍGUENOS EN:</h3>
+                <div class="tw"><img src="../images/iconos/redes sociales/twitter.webp" alt=""><p>@ClaraMichi</p></div>
+                <div class="ig"><img src="../images/iconos/redes sociales/instagram.webp" alt=""><p>@ClaraMichi</p></div>
+                <div class="fb"><img src="../images/iconos/redes sociales/facebook.webp" alt=""><p>ClaraMichi</p></div>
+            </div>
+            <div class="footer-col-3">
+                <H3>MENÚ:</H3>
+                <div class="lista-categorias-footer">
                     <ul>
-                        <li><a href="./pages/Cafeteria.html">Cafetería</a></li>
-                        <li><a href="./pages/RestoBar.html">RestoBar</a></li>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/Heladeria.html">Heladería</a></li>
-                        <li><a href="./pages/Contacto.html">Contacto</a></li>
-
-                        <div class="food-blog-i">
-                            <a href=""><img src="../images/iconos/redes sociales/Instagram.webp"
-                                    alt="Instagram link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                        </div>
+                        <li><a href="./Cafeteria.html">Cafetería<a></li>
+                        <li><a href="./Heladeria.html">Heladería</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./RestoBar.html">RestoBar</a></li>
                     </ul>
                 </div>
             </div>
+                
+                
+            
         </div>
-
+        <div class="final">
+            <div class="copy">copyright &copy; 2021 ClaraMichi. Todos los derechos reservados.</div>
+            <div class="politic">Política de privacidad | Aviso legal | Mapa del sitio</div>
+        </div>
     </footer>
 
-    <!--JAVASCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
 
     <!--SEPARATE-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!--JAVASCRIPT AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

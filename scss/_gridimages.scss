@@ -1,27 +1,27 @@
 /*Grids de imágenes*/
 
 .locals-galery .container .row img {
-    height: 100%;
-    border-radius: 2rem;
+  height: 100%;
+  border-radius: 2rem;
 }
 
 /*Configuración del fondo de pantalla de las categorías*/
 @mixin category-background {
-    position: relative;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: top;
-    padding: $main-image-pdd;
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top;
+  padding: 260px 0 220px;
 }
 
 .main-rb {
-    @include category-background;
-    background-image: url(../images/iconos/CatWithEgg.webp);
+  @include category-background;
+  background-image: url(../images/iconos/CatWithEgg.webp);
 }
 
 .main-h {
-    @include category-background;
-    background-image: url(../images/iconos/BlackCat_Ice_Cream_.webp);
+  @include category-background;
+  background-image: url(../images/iconos/BlackCat_Ice_Cream_.webp);
 }
 
 .main-caf {
@@ -30,111 +30,184 @@
 }
 
 .main-cont {
-    @include category-background;
-    background-image: url(../images/iconos/CatContact.webp);
+  @include category-background;
+  background-image: url(../images/iconos/CatContact.webp);
 }
 
 /*Configuración de las cartas de las categorías de imágenes*/
 .imageProperties {
-    border-radius: 2rem;
-    height: 100%;
+  border-radius: 2rem;
+  height: 100%;
 }
 
-.card {
-    @extend .imageProperties;
+/*--------CONFIGURACIÓN DE CARDS DE LOCALES DE COMIDA---------*/
+.grid-locals-container {
+  display: block;
+}
+
+.locales {
+  margin: auto;
+}
+
+.locales-columna {
+  margin-top: 30px;
+}
+
+.cards-locales .locales {
+  display: grid;
+}
+
+.contenedor-cards {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 605px);
+  grid-template-rows: 600px 600px;
+  font-size: 5rem;
+}
+
+.container-fluid {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+  height: 450px;
+  margin: 0 0;
+  max-width: 98%;
+  overflow: hidden;
+}
+
+.card-image-container {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  img {
+    object-fit: cover;
+    display: block;
+    width: 92%;
+    border-radius: 2rem;
+  }
+
+
+}
+
+/*Para agrandar la card*/
+
+.card-body {
+  color: #7A7A7A;
+  height: 100%;
+  padding: 30px 20px 50px;
+
+  p {
+    font-size: 1.7rem
+  }
+
+}
+
+.tagline {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #252830;
+  font-family: "Playfair Display SC";
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.divider {
+  background: #7A7A7A;
+  height: 2px;
+  margin: 25px auto;
+  width: 40px;
+}
+
+.paragraph {
+  font-weight: 300;
+}
+
+.read-more {
+  bottom: 25px;
+  color: #7A7A7A;
+  cursor: pointer;
+  left: 50%;
+  padding: 5px;
+  position: absolute;
+  text-decoration: none;
+  top: auto;
+  transform: translateX(-50%);
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: #252830;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 520px) {
+  .cards-locales .locales {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 728px) {
+  .cards-locales .locales {
+    grid-template-columns: repeat(3, 33.3%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-locales .locales {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .locales {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .locales {
+    width: 1630px;
+  }
+}
+
+@media (max-width: 530px) {
+  .container-fluid {
+    left: 0;
+    margin: 10px 0;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #000;
+    top: 0;
+    transform: none;
+  }
 
-    & .image {
-        @extend .imageProperties;
-        overflow: hidden;
+  .card-body {
+    background-color: white;
+  }
+}
 
-        img {
-            transition: .5s;
-        }
-    }
-
-    &:hover .image img {
-        opacity: .5;
-        transform: translateX(30%);
-        /*100%*/
-    }
-
-    & .details {
-        @extend .imageProperties;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80%;
-        /*100%*/
-        background: #ffc107;
-        transition: .5s;
-        transform-origin: left;
-        transform: perspective(2000px) rotateY(-90deg);
-    }
-
-    &:hover .details {
-        transform: perspective(2000px) rotateY(0deg);
-    }
-
-    .details .center {
-        padding: 10px;
-        text-align: center;
-        background: #fff;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
-        h1 {
-            margin: 0;
-            padding: 0;
-            color: #ff3636;
-            line-height: 20px;
-            font-size: $font-24;
-            text-transform: uppercase;
-
-            span {
-                font-size: $font-16;
-                color: #262626;
-            }
-        }
-
-        p {
-            margin: 0.1rem 0;
-            padding: 0;
-            color: #262626;
-            font-size: $font-21;
-
-        }
-
-        & ul {
-            margin: 0.1rem auto 0;
-            padding: 0;
-            display: table;
-
-            li {
-                list-style: none;
-                margin: 0.3rem 0.3rem;
-                float: left;
-
-                a {
-                    display: block;
-                    background: #262626;
-                    color: #fff;
-                    width: 1.7rem;
-                    height: 1.7rem;
-                    text-align: center;
-                    transform: .5s;
-                }
-
-                &:hover {
-                    background: #ff3636;
-                }
-            }
-        }
-    }
-
+@media (max-width: 580px) {
+  .blog-card {
+    height: 350px;
+    overflow: visible;
+  }
 }
