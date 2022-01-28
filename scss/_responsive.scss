@@ -1,3 +1,16 @@
+/*Medida de PC*/
+@media screen and (min-width:1170px) {
+    .wrapper {
+        display: none;
+    }
+    .img-carrusel {
+        height: 20rem;
+        width: 17rem;
+    }
+}
+
+
+
 /*Medidas de Ipad*/
 @media screen and (max-width: 1025px) {
 
@@ -32,20 +45,44 @@
         }
     }
 
-    .footer-body .footer-image-credits {
-        padding: 1% 1%;
-        justify-content: unset;
+
+
+
+    .cards-locales {
+        display: none;
     }
 
-    .footer-body .footer-list {
-        margin-right: 5rem;
-        margin-left: 5rem;
+    .wrapper {
+        margin-top: 20em;
+        justify-content: space-around;
     }
 
-    .footer-list ul li a {
-        text-decoration: none;
+    .card {
+        width: 340px;
+        height: 390px;
+        margin-bottom: 200px;
     }
+
+    .local-title {
+        font-size: 1.5rem;
+    }
+
+    .copyright-container {
+        justify-content: flex-start;
+
+        .copyright {
+            padding-left: 20%;
+        }
+
+    }
+
+    .politic {
+        display: none;
+    }
+
 }
+
+
 
 /*Medidas de Celular*/
 
@@ -94,31 +131,71 @@
         padding: 10%;
     }
 
-    .footer-body {
-        margin-top: 15%;
+    .wrapper {
+        margin-top: 420em;
+      }
+    
+      .card {
+        width: 340px;
+        height: 390px;
+        margin-bottom: 300px;
+      }
+    
+      .local-title {
+        font-size: 1.8rem;
+      }
 
-        & .footer-image-credits {
-            padding: 1% 1%;
-            justify-content: unset;
+    .footer-container {
+        padding: 2rem;
+        flex-direction: column;
+    }
 
-            p {
-                font-size: 0.8rem;
+    .footer-content-container {
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2a2a2a;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-of-type(1) {
+            align-items: center;
+        }
+
+        &:nth-of-type(3) {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+    }
+
+    .footer-menus {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border-bottom: 1px solid #2a2a2a;
+
+        .footer-content-container {
+
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                font-size: 20px;
+                align-items: center;
+                border-bottom: none;
             }
         }
-
-        & .footer-list {
-            display: none;
-        }
     }
 
-    .blog-list-footer {
+    .copyright-container {
+        justify-content: flex-start;
 
-        ul {
-            padding: 0%;
+        .copyright {
+            padding-left: 30px;
         }
 
-        h1 {
-            font-size: 1.5em;
-        }
     }
+
+    .politic {
+        display: none;
+    }
+
 }
