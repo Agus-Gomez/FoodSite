@@ -11,11 +11,19 @@
     <meta name="keywords" content="buenos aires, mi zona, pet fiendly, sin tacc, cafetería, café">
     <link rel="shortcut icon" href="../images/iconos/CatLogo.png">
     <title>Cafeterías</title>
-    <!--Google Fonts-->
+      <!--Google Fonts-->
+    <!--MONTSERRAT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<!--SOURCE SANS PRO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<!--FONT LOGO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
     <!--estilos para cards de locales de comida-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -29,49 +37,52 @@
     <script src="https://kit.fontawesome.com/e884321e9b.js" crossorigin="anonymous"></script>
 
 
-
-    <!--ANIMACION ANIMATE.STYLE-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
-
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/Estilos_galeria.css">
 </head>
 
 <body>
-
 
     <!--INICIO DEL NAV-->
     <header class="header">
 
 
-        <nav class="menu-inicio">
-            <div class="lista-categorias">
-                <ul>
-                    <li><a href="./Cafeteria.html">Cafetería<a></li>
-                    <li><a href="./Heladeria.html">Heladería</a></li>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./RestoBar.html">RestoBar</a></li>
-                </ul>
+        <div class="container-menu">
+            <div class="container-navbar-fixed">
+                <nav class="navbar">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <a href="../index.html" class="logo"><img src="../images/iconos/clara-michi-logo.png"></a>
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="./Cafeteria.html" class="nav-links"><i class="fas fa-coffee fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="nav-links"><i class="fas fa-home fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="./Heladeria.html" class="nav-links"><i class="fas fa-ice-cream fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="./RestoBar.html" class="nav-links"><i class="fas fa-utensils fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
-        <a href="../index.html" class="navbar-brand"><img class="clara-michi-logo"
-                src="../images/iconos/clara-michi-logo.png" alt="ClaraMichi logo"></a>
-    </header>
-    <!--FIN DEL NAV-->
 
-    <!--MAIN SECTION-->
-    <section class="main-caf">
-        <div class="container">
-            <div class="row">
-                <div data-aos="fade-right">
-                    <div class="col-sm-12 col-md-6">
+            <main>
+                <div class="welcome-section welcome-section-caf">
+                    <div class="layer">
+                        <h1 class="welcome-headline">CAFETERÍA</h1>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
-    </section>
-    <!--MAIN SECTION END-->
+
+    </header>
+    <!-----FIN DEL NAV------>
+
 
 
     <!------------INICIO DE CARDS DE LOCALES DE COMIDA------------->
@@ -85,19 +96,20 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Alma Canela/alma canela brunch.webp">
+                            <img src="../images/Cafeterias/AlmaCanela/alma canela brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <!--Cambiar el featured por los símbolos de comida-->
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+
+                            <p class="tagline text-center">DEVOTO</p>
+                            <h3 class="title text-center">ALMA CANELA</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p>
-                            <a class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify">Pedimos:
+                                Combo DE CAMPO con café con leche, jugo de naranja y tostadas ($550),<br> el combo
+                                LIVIANO Y SALUDABLE con las mismas bebidas y yogur, fruta y granola ($570), y una
+                                porción de “The Amazing Meli Cake”($530).<br> No cobran adicional por leche de almendra.
+                                Sirven café de especialidad (Oyambre) elegimos el flat white (viene en taza pequeña tipo
+                                de cortado, si prefieren más grande pidan el café con leche)</p>
+
                         </div>
                     </div>
                 </div>
@@ -109,18 +121,20 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Angelica DeliCoffee/angela deli coffee brunch.webp">
+                            <img src="../images/Cafeterias/AngelicaDeliCoffee/angela deli coffee brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <p class="tagline text-center">NUÑEZ</p>
+                            <h3 class="title text-center">ANGELA DELI&COFFEE</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify">En nuestro caso pedimos el brunch para 2 ($3000) que
+                                incluye:<br>
+                                2 cafés medianos o té en hebras (adicional leche vegetal casera $80)<br>
+                                Botella de limonada, plato con tostadas, huevos revueltos, palta, tomates asado y queso
+                                crema, croissant relleno (jyq o tomate y queso)
+                                2 vasos de yogur con granola
+                                y 1 porción de torta a elección
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -132,18 +146,23 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Cafe Nerea/cafe nerea brunch.webp">
+                            <img src="../images/Cafeterias/CafeNerea/cafe nerea brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <p class="tagline text-center">ALMAGRO</p>
+                            <h3 class="title text-center">CAFÉ NEREA</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify">Siendo dos elegimos:<br>
+                                GRATIN: sandwich cubierto de queso sardo gratinado, lomo con hierbas (se puede pedir
+                                aparte) acompañado con ricota ($650)<br>
+                                VEGAN: tostón de masa madre, hummus de remolacha, tomates confitados acompañado de
+                                hummus de albahaca, papines y cherry ($550)
+                                Torta banana split: sablee de vainilla, dulce de leche,
+                                banana, crema chantilly, y salsa salted caramel ($500) Flat white con leche de almendras
+                                ($230+ $100)
+                                Latte ($230)
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,18 +174,20 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Cariño Bar/carinio bar brunch.webp">
+                            <img src="../images/Cafeterias/CariñoBar/carinio bar brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <p class="tagline text-center">ALMAGRO</p>
+                            <h3 class="title text-center">AY CARIÑO BAR</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify">Con tantas opciones con onda Fuimos a probar el brunch
+                                ($1700) que incluye:<br>
+                                2 tostadas con huevos revueltos, palta, queso, tomate y semillas (pedimos 1 sin palta)
+                                1 scon de queso
+                                1 jalá con nutella
+                                yogur con granola casera y frutas.
+                                porción de torta a elección 2 cafés (+$70 leche de almendras)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -178,18 +199,18 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Hotel Savoy BsAs/hotel savoy bs as brunch.webp">
+                            <img src="../images/Cafeterias/HotelSavoyBsAs/hotel savoy bs as brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <p class="tagline text-center">MONSERRAT</p>
+                            <h3 class="title text-center">HOTEL SAVOY BS AS</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify">El té imperio cuesta $1150 x persona, además incluye
+                                infusión caliente y espumante x persona. La cantidad de cada plato se adapta dependiendo
+                                la cantidad de gente que lo pida, te cobran por persona.<br>
+                                El brunch cuesta $1000 x persona, tienen opción vegetariana, vegana, o sin tacc (este
+                                último cuesta $1200). También se adaptan las cantidades según los comensales. La foto 4
+                                es un brunch vegetariano para 1, y la foto 5 es un brunch clásico para 2.</p>
                         </div>
                     </div>
                 </div>
@@ -201,112 +222,26 @@
                 <div class="container-fluid">
                     <div class="blog-card">
                         <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Luce Cocina/luce cocina brunch.webp">
+                            <img src="../images/Cafeterias/LuceCocina/luce cocina brunch.webp">
                         </div>
                         <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                            <p class="tagline text-center">CABALLITO</p>
+                            <h3 class="title text-center">LUCE COCINA</h3>
                             <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
+                            <p class="paragraph text-justify"> Esta vez fuimos por:<br> Stracciatella con pastelera,
+                                arándanos y chocolate (la larguita) $180
+                                Nudo con pastelera y frutas $190
+                                Danish de banana con chocolate $180
+                                Roll de frambuesa $210
+                                Té en hebras $120
+                                Café con leche $140</p>
                         </div>
                     </div>
                 </div>
             </article>
 
 
-            <article class="locales-columna">
 
-                <div class="container-fluid">
-                    <div class="blog-card">
-                        <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Matcha Point/matcha point brunch.webp">
-                        </div>
-                        <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                            <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="locales-columna">
-
-                <div class="container-fluid">
-                    <div class="blog-card">
-                        <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Merope BA/merope b.a brunch.webp">
-                        </div>
-                        <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                            <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="locales-columna">
-
-                <div class="container-fluid">
-                    <div class="blog-card">
-                        <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Mkaffee/mkafee brunch.webp">
-                        </div>
-                        <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                            <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="locales-columna">
-
-                <div class="container-fluid">
-                    <div class="blog-card">
-                        <div class="card-image-container col-sm-6 col-xs-6">
-                            <img src="../images/Cafeterias/Obrador de Panes/obrador de panes brunch.webp">
-                        </div>
-                        <div class="card-body col-sm-6 col-xs-6">
-                            <p class="tagline text-center">Featured</p>
-                            <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                            <div class="divider"></div>
-                            <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Ad aliquam a
-                                incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                                At quasi
-                                magni voluptates molestiae aperiam</p><a
-                                class="read-more glyphicon glyphicon-chevron-down"></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
 
 
         </div>
@@ -323,46 +258,30 @@
             <input type="checkbox" id="card1" class="more" aria-hidden="true">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+                    style="background-image: url('../images/Cafeterias/AlmaCanela/alma canela brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>ALMA CANELA</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card1" class="button" aria-hidden="true">
-                            Details
+                            DEVOTO
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
-
+                       
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                            <p>Pedimos:
+                                Combo DE CAMPO con café con leche, jugo de naranja y tostadas ($550),<br> el combo
+                                LIVIANO Y SALUDABLE con las mismas bebidas y yogur, fruta y granola ($570), y una
+                                porción de “The Amazing Meli Cake”($530).<br> No cobran adicional por leche de almendra.
+                                Sirven café de especialidad (Oyambre) elegimos el flat white (viene en taza pequeña tipo
+                                de cortado, si prefieren más grande pidan el café con leche)</p>
+                            
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">ALMA CANELA</div>
 
                         <label for="card1" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
@@ -378,48 +297,34 @@
             <input type="checkbox" id="card2" class="more">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c02fb96f9cfc16d3649835b75d1b2033&auto=format&fit=crop&w=1350&q=80')">
+                    style="background-image: url('../images/Cafeterias/AngelicaDeliCoffee/angela\ deli\ coffee\ brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>ANGELA DELI&COFFEE</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card2" class="button" aria-hidden="true">
-                            Details
+                            NUÑEZ
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
+                        
 
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                            
+                            <p>En nuestro caso pedimos el brunch para 2 ($3000) que
+                                incluye:<br>
+                                2 cafés medianos o té en hebras (adicional leche vegetal casera $80)<br>
+                                Botella de limonada, plato con tostadas, huevos revueltos, palta, tomates asado y queso
+                                crema, croissant relleno (jyq o tomate y queso)
+                                2 vasos de yogur con granola
+                                y 1 porción de torta a elección</p>
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">ANGELA DELI&COFFEE</div>
 
-                        <label for="card1" class="button return" aria-hidden="true">
+                        <label for="card2" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
                         </label>
                     </div>
@@ -433,46 +338,34 @@
             <input type="checkbox" id="card3" class="more">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+                    style="background-image: url('../images/Cafeterias/CafeNerea/cafe\ nerea\ brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>CAFÉ NEREA</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card3" class="button" aria-hidden="true">
-                            Details
+                            ALMAGRO
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
+                        
 
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                           
+                            <p>Siendo dos elegimos:<br>
+                                GRATIN: sandwich cubierto de queso sardo gratinado, lomo con hierbas (se puede pedir
+                                aparte) acompañado con ricota ($650)<br>
+                                VEGAN: tostón de masa madre, hummus de remolacha, tomates confitados acompañado de
+                                hummus de albahaca, papines y cherry ($550)
+                                Torta banana split: sablee de vainilla, dulce de leche,
+                                banana, crema chantilly, y salsa salted caramel ($500) Flat white con leche de almendras
+                                ($230+ $100)
+                                Latte ($230)</p>
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">CAFÉ NEREA</div>
 
                         <label for="card3" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
@@ -488,46 +381,32 @@
             <input type="checkbox" id="card4" class="more">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+                    style="background-image: url('../images/Cafeterias/CariñoBar/carinio\ bar\ brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>AY CARIÑO BAR</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card4" class="button" aria-hidden="true">
-                            Details
+                           ALMAGRO
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
+                       
 
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                            
+                            <p>Con tantas opciones con onda Fuimos a probar el brunch
+                                ($1700) que incluye:<br>
+                                2 tostadas con huevos revueltos, palta, queso, tomate y semillas (pedimos 1 sin palta)
+                                1 scon de queso
+                                1 jalá con nutella
+                                yogur con granola casera y frutas.
+                                porción de torta a elección 2 cafés (+$70 leche de almendras)</p>
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">AY CARIÑO BAR</div>
 
                         <label for="card4" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
@@ -542,46 +421,31 @@
             <input type="checkbox" id="card5" class="more">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+                    style="background-image: url('../images/Cafeterias/HotelSavoyBsAs/hotel\ savoy\ bs\ as\ brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>HOTEL SAVOY BS AS</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card5" class="button" aria-hidden="true">
-                            Details
+                            MONSERRAT
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
+                        
 
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                           
+                            <p>El té imperio cuesta $1150 x persona, además incluye
+                                infusión caliente y espumante x persona. La cantidad de cada plato se adapta dependiendo
+                                la cantidad de gente que lo pida, te cobran por persona.<br>
+                                El brunch cuesta $1000 x persona, tienen opción vegetariana, vegana, o sin tacc (este
+                                último cuesta $1200). También se adaptan las cantidades según los comensales. La foto 4
+                                es un brunch vegetariano para 1, y la foto 5 es un brunch clásico para 2.</p></p>
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">HOTEL SAVOY BS AS</div>
 
                         <label for="card5" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
@@ -597,266 +461,34 @@
             <input type="checkbox" id="card6" class="more">
             <div class="content">
                 <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+                    style="background-image: url('../images/Cafeterias/LuceCocina/luce\ cocina\ brunch.webp')">
                     <div class="inner">
-                        <h2>CAFETERÍA</h2>
+                        <h2>LUCE COCINA</h2>
                         <div class="category-icon">
                             <i class="fas fa-coffee fa-3x"></i>
                         </div>
                         <label for="card6" class="button" aria-hidden="true">
-                            Details
+                           CABALLITO
                         </label>
                     </div>
                 </div>
                 <div class="back">
                     <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
+                        
 
                         <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
+                           
+                            <p> Esta vez fuimos por:<br> Stracciatella con pastelera,
+                                arándanos y chocolate (la larguita) $180
+                                Nudo con pastelera y frutas $190
+                                Danish de banana con chocolate $180
+                                Roll de frambuesa $210
+                                Té en hebras $120
+                                Café con leche $140</p>
                         </div>
-                        <div class="local-title">Alma Canela</div>
+                        <div class="local-title">LUCE COCINA</div>
 
                         <label for="card6" class="button return" aria-hidden="true">
-                            <i class="fas fa-arrow-left"></i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <input type="checkbox" id="card7" class="more">
-            <div class="content">
-                <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
-                    <div class="inner">
-                        <h2>CAFETERÍA</h2>
-                        <div class="category-icon">
-                            <i class="fas fa-coffee fa-3x"></i>
-                        </div>
-                        <label for="card7" class="button" aria-hidden="true">
-                            Details
-                        </label>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
-
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                        </div>
-                        <div class="local-title">Alma Canela</div>
-
-                        <label for="card7" class="button return" aria-hidden="true">
-                            <i class="fas fa-arrow-left"></i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="card">
-            <input type="checkbox" id="card8" class="more">
-            <div class="content">
-                <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
-                    <div class="inner">
-                        <h2>CAFETERÍA</h2>
-                        <div class="category-icon">
-                            <i class="fas fa-coffee fa-3x"></i>
-                        </div>
-                        <label for="card8" class="button" aria-hidden="true">
-                            Details
-                        </label>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
-
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                        </div>
-                        <div class="local-title">Alma Canela</div>
-
-                        <label for="card8" class="button return" aria-hidden="true">
-                            <i class="fas fa-arrow-left"></i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <input type="checkbox" id="card9" class="more">
-            <div class="content">
-                <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
-                    <div class="inner">
-                        <h2>CAFETERÍA</h2>
-                        <div class="category-icon">
-                            <i class="fas fa-coffee fa-3x"></i>
-                        </div>
-                        <label for="card9" class="button" aria-hidden="true">
-                            Details
-                        </label>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
-
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                        </div>
-                        <div class="local-title">Alma Canela</div>
-
-                        <label for="card9" class="button return" aria-hidden="true">
-                            <i class="fas fa-arrow-left"></i>
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="card">
-            <input type="checkbox" id="card10" class="more">
-            <div class="content">
-                <div class="front"
-                    style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
-                    <div class="inner">
-                        <h2>CAFETERÍA</h2>
-                        <div class="category-icon">
-                            <i class="fas fa-coffee fa-3x"></i>
-                        </div>
-                        <label for="card10" class="button" aria-hidden="true">
-                            Details
-                        </label>
-                    </div>
-                </div>
-                <div class="back">
-                    <div class="inner">
-                        <div class="info">
-
-                            <div class="icon">
-                                <i class="fas fa-seedling fa-2x"></i>
-                                <p>vegano</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-paw fa-2x"></i>
-                                <p>Pet Friendly</p>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <div class="icon">
-                                <i class="fas fa-wheat fa-2x"></i>
-                                <p>celíaco</p>
-                            </div>
-                        </div>
-
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusamus.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam
-                                ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis
-                                tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
-                        </div>
-                        <div class="local-title">Alma Canela</div>
-
-                        <label for="card10" class="button return" aria-hidden="true">
                             <i class="fas fa-arrow-left"></i>
                         </label>
                     </div>
@@ -886,12 +518,13 @@
                 </path>
             </svg>
             <div class="newsletter">
-                <h1>Monthly<span> Newsletter</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <h1>¡HEY!<span> ¿DÓNDE COMEMOS HOY?</span></h1>
+                <p>¡Se parte de nuestra familia CLARAMICHI y conoce los mejores locales antes que nadie!</p>
                 <div class="text">
-                    <input type="text" placeholder="Enter Your Email">
+                    <input type="text" placeholder="¡Pon tu email aqui para recibir novedades!">
                     <button><i class="fas fa-arrow-right fa-2x"></i></button>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -910,7 +543,7 @@
 
         <div class="footer-container">
             <div class="footer-content-container">
-                <div class="website-logo"><img src="../images/iconos/clara-michi-logo.png" alt=""></div>
+                <div class="website-logo"><a href="../index.html"><img src="../images/iconos/clara-michi-logo.png"  alt="Clara Michi logo"></a></div>
 
                 <span class="footer-info">
                     <h3>CLARAMICHI</h3>
@@ -922,20 +555,21 @@
                     <span class="menu-title">
                         <h3>MENÚ:</h3>
                     </span>
-                    <a href="" class="menu-item-footer">Cafetería</a>
-                    <a href="" class="menu-item-footer">Heladería</a>
-                    <a href="" class="menu-item-footer">Inicio</a>
-                    <a href="" class="menu-item-footer">RestoBar</a>
+                    <a href="./Cafeteria.html" class="menu-item-footer">Cafetería</a>
+                    <a href="./Heladeria.html" class="menu-item-footer">Heladería</a>
+                    <a href="../index.html" class="menu-item-footer">Inicio</a>
+
+                    <a href="./RestoBar.html" class="menu-item-footer">RestoBar</a>
                 </div>
 
                 <div class="footer-content-container">
                     <span class="menu-title">
-                        <h3>LEGAL:</h3>
+                        <h3>CONTACTO:</h3>
                     </span>
                     <span class="menu-title"></span>
-                    <a href="" class="menu-item-footer">Privacy policy</a>
-                    <a href="" class="menu-item-footer">cookies</a>
-                    <a href="" class="menu-item-footer">terms & conditions</a>
+                    <div class="menu-item-footer">¡ayudanos a crecer!</div>
+                    <div class="menu-item-footer">dinos tu local favorito</div>
+                    <a href="../pages/Contacto.html" class="menu-item-footer">aquí</a>
                 </div>
             </div>
 
@@ -944,10 +578,12 @@
                     <h3>Follow Us:</h3>
                 </span>
                 <div class="social-container">
-                    <div class="tw"><img src="../images/iconos/redes sociales/twitter.webp" alt=""></div>
-                    <div class="ig"><img src="../images/iconos/redes sociales/instagram.webp" alt=""></div>
-                    <div class="fb"><img src="../images/iconos/redes sociales/facebook.webp" alt=""></div>
-
+                    <div class="tw"><a href="https://twitter.com/home"><img
+                                src="../images/iconos/redes sociales/twitter.webp" alt="twitter button"></a></div>
+                    <div class="ig"><a href="https://www.instagram.com/"><img
+                                src="../images/iconos/redes sociales/instagram.webp" alt="instagram button"></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/"><img
+                                src="../images/iconos/redes sociales/facebook.webp" alt="facebook button"></a></div>
                 </div>
             </div>
         </div>
@@ -969,6 +605,9 @@
     <script>
         AOS.init();
     </script>
+
+     <!--MI JAVASCRIPT-->
+     <script src="../scripts/menu.js" lang="javascript"></script>
 </body>
 
 </html>

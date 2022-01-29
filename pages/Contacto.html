@@ -11,10 +11,22 @@
     <link rel="shortcut icon" href="../images/iconos/CatLogo.png">
     <title>Formulario de Contacto</title>
     <!--Google Fonts-->
+    <!--MONTSERRAT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<!--SOURCE SANS PRO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<!--FONT LOGO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!--estilos para cards de locales de comida-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
 
     <!--CSS BOOTSTRAP -->
@@ -22,8 +34,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
-    <!--ANIMACION ANIMATE.STYLE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--AWESOME FONT-->
+    <script src="https://kit.fontawesome.com/e884321e9b.js" crossorigin="anonymous"></script>
+
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
@@ -31,187 +44,189 @@
 
 <body>
 
-    <!-- HEADER SECTION -->
-    <section id="header">
-        <div class="animate-navbar animate__animated animate__fadeInDown">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
-                    <a href="../index.html" class="navbar-brand"> <img src="../images/iconos/CatLogo.png"
-                            alt="CatLogo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle Navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+   <!--INICIO DEL NAV-->
+   <header class="header">
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="../pages/Cafeteria.html" class="nav-link">Cafetería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/RestoBar.html" class="nav-link">RestoBar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Heladeria.html" class="nav-link">Heladería</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../pages/Contacto.html" class="nav-link">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+    <div class="container-menu">
+        <div class="container-navbar-fixed">
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="../index.html" class="logo"><img src="../images/iconos/clara-michi-logo.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./Cafeteria.html" class="nav-links"><i class="fas fa-coffee fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links"><i class="fas fa-home fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="./Heladeria.html" class="nav-links"><i
+                                class="fas fa-ice-cream fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="./RestoBar.html" class="nav-links"><i class="fas fa-utensils fa-3x"></i></a>
+                    </li>
+                </ul>
             </nav>
         </div>
-    </section>
-    <!--HEADER SECTION END-->
 
-    <!--MAIN SECTION-->
-    <section class="main-cont">
-        <div class="container">
-            <div class="row">
-                <div data-aos="fade-right">
-                    <div class="col-sm-12 col-md-6">
-                    </div>
+        <main>
+            <div class="welcome-section welcome-section-con">
+                <div class="layer">
+                    <h1 class="welcome-headline">CONTACTO</h1>
+             
+                </div>
+            </div>
+        </main>
+    </div>
+
+</header>
+ <!-----FIN DEL NAV------>
+
+
+
+    <div class="form-container">
+
+        <div class="contact-us">
+
+            <h2>• ¡ Se parte de claramichi ! •</h2>
+            <div class="underline"></div>
+            <form action="#">
+                <label for="customerName">NAME <em>&#x2a;</em></label><input id="customerName" name="customerName"
+                    required="" type="text" placeholder="Escribe tu nombre o apodo aqui" />
+
+                <label for="customerEmail">EMAIL <em>&#x2a;</em></label><input id="customerEmail" name="customerEmail"
+                    required="" type="email" placeholder="Pon tu email aqui para que podamos contactarte" />
+
+                <label for="customerPhone">ASUNTO DEL MENSAJE <em>&#x2a;</em></label><input id="customerPhone"
+                    name="subjectLine" required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="text"
+                    placeholder="Dinos en qué tipo de comida se destaca el local" />
+
+                <label for="orderNumber">DIRECCIÓN DEL LOCAL <em>&#x2a;</em></label><input id="orderNumber"
+                    name="subjectAddress" required="" type="text" placeholder="¿Dónde queda?" />
+
+                <label for="customerNote">TU MENSAJE <em>&#x2a;</em></label><textarea id="customerNote"
+                    name="customerNote" required="" rows="4" placeholder="¡Cuéntanos todo del lugar!"></textarea>
+                <h3>
+                    Si quieres recibir créditos o ser anónimo en la publicación puedes aclararlo en el mensaje.
+                </h3>
+
+                <button id="customerOrder">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+    <!------NEWSLETTER INICIO------->
+
+    <div class="contenedor-newsletter">
+        <div class="wave-and-newsletter">
+            <svg viewBox="1 529.754 599 71.749" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient spreadMethod="pad" id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(248, 165, 194);stop-opacity:1;" />
+                        <stop offset="100%" style="stop-color:rgb(119, 139, 235);stop-opacity:1;" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)"
+                    d=" M 0 560 Q 66.018 533.115 153.816 571.235 C 241.613 609.355 293.526 571.416 310 560 C 346.774 534.516 402.903 510.645 450 560 Q 497.097 609.355 600 560 L 600 600 L 0 600 L 0 560 Z ">
+                </path>
+            </svg>
+            <div class="newsletter">
+                <h1>¡HEY!<span> ¿DÓNDE COMEMOS HOY?</span></h1>
+                <p>¡Se parte de nuestra familia CLARAMICHI y conoce los mejores locales antes que nadie!</p>
+                <div class="text">
+                    <input type="text" placeholder="¡Pon tu email aqui para recibir novedades!">
+                    <button><i class="fas fa-arrow-right fa-2x"></i></button>
                 </div>
             </div>
         </div>
-    </section>
-    <!--MAIN SECTION END-->
-
-    <!-- LISTA ORDENADA -->
-    <section>
-        <div class="textContact">
-            <h3>Contacto</h3>
-            <H3>Si quieres enterarte primero que nadie de tu nuevo local favorito puedes suscribirte aquí</H3>
-
-            <!-- LISTA ORDENADA -->
-            <div class="registro">
-                <form action="/" method="post">
-                    <div class="notificationSection">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="nombre@ejemplo.com">
-                        </div>
-
-                        <p class="notificationQuestion">¿Cada cuánto quieres recibir notificaciones?</p>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option value="1">1 por día</option>
-                            <option value="2">1 por semana</option>
-                            <option value="3">1 cada 2 semanas</option>
-                            <option value="4">1 correo por mes</option>
-                        </select>
-                        <button type="button" class="btn btn-outline-success">Let's Eat!</button>
-                    </div>
-                </form>
+    </div>
+    <!-------NEWSLETTER FIN--------->
 
 
-                <h3>Puedes recomendar locales o ser parte de nuestro blog mandando un correo aquí</h3>
-
-                <form action="/" method="post">
-                    <div class="emailForm">
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <div>
-                                <input id="nombre" type="text" placeholder="Nombre real o Apodo">
-                            </div>
-                        </div>
 
 
-                        <div>
-                            <label class="email" for="email">Email:</label>
-                            <div>
-                                <input id="email" type="email" placeholder="Ejemplo@gmail.com">
-                            </div>
-                        </div>
 
-
-                        <div>
-                            <label for="cuéntanos">Comentarios:</label>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label"></label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="¡Cuéntanos sobre vos! Puedes agregar links o direcciones del local a visitar."></textarea>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-outline-success">Enviar</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </section>
 
 
     <!--INICIO DE FOOTER-->
 
-    <footer class="footer-custom">
-        <div class="footer-body">
-            <div class="footer-image-credits">
+    <footer>
 
-                <div class="credits-locals">
 
-                    <p>Créditos de las imágenes a todos los locales mostrados</p>
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <div class="website-logo"><a href="../index.html"><img src="../images/iconos/clara-michi-logo.png" alt="Clara Michi logo"></a></div>
 
+                <span class="footer-info">
+                    <h3>CLARAMICHI</h3>
+                </span>
+            </div>
+
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">
+                        <h3>MENÚ:</h3>
+                    </span>
+                    <a href="./Cafeteria.html" class="menu-item-footer">Cafetería</a>
+                    <a href="./Heladeria.html" class="menu-item-footer">Heladería</a>
+                    <a href="../index.html" class="menu-item-footer">Inicio</a>
+                    <a href="./RestoBar.html" class="menu-item-footer">RestoBar</a>
                 </div>
 
-                <div class="blog-inspiration">
-                    <p>Inspiración para el blog</p>
-                </div>
-
-                <div class="food-blog">
-                    <p>Entre Tostadas</p>
-                </div>
-                <div class="food-blog-i">
-                    <a href=""><img src="../images/iconos/redes sociales/Instagram.webp" alt="Instagram link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                    <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                </div>
-
-                <div class="blog-list-footer">
-                    <h1>ClaraMichi</h1>
-                </div>
-
-
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="./pages/Cafeteria.html">Cafetería</a></li>
-                        <li><a href="./pages/RestoBar.html">RestoBar</a></li>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/Heladeria.html">Heladería</a></li>
-                        <li><a href="./pages/Contacto.html">Contacto</a></li>
-
-                        <div class="food-blog-i">
-                            <a href=""><img src="../images/iconos/redes sociales/Instagram.webp"
-                                    alt="Instagram link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Facebook.webp" alt="Facebook link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/YouTube.webp" alt="YouTube link"></a>
-                            <a href=""><img src="../images/iconos/redes sociales/Twitter.webp" alt="Twitter link"></a>
-                        </div>
-                    </ul>
+                <div class="footer-content-container">
+                    <span class="menu-title">
+                        <h3>CONTACTO:</h3>
+                    </span>
+                    <span class="menu-title"></span>
+                    <div class="menu-item-footer">¡ayudanos a crecer!</div>
+                    <div class="menu-item-footer">dinos tu local favorito</div>
+                    <a href="../pages/Contacto.html" class="menu-item-footer">aquí</a>
                 </div>
             </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">
+                    <h3>PUEDES SEGUIRNOS EN:</h3>
+                </span>
+                <div class="social-container">
+                    <div class="tw"><a href="https://twitter.com/home"><img
+                                src="../images/iconos/redes sociales/twitter.webp" alt="twitter button"></a></div>
+                    <div class="ig"><a href="https://www.instagram.com/"><img
+                                src="../images/iconos/redes sociales/instagram.webp" alt="instagram button"></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/"><img src="../images/iconos/redes sociales/facebook.webp"alt="facebook button"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="copyright">copyright &copy; 2021 ClaraMichi. Todos los derechos reservados.</div>
+            <div class="politic">Política de privacidad | Aviso legal | Mapa del sitio</div>
         </div>
 
     </footer>
 
+
     <!--JAVASCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
 
     <!--SEPARATE-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
+    </script>
 
     <!--JAVASCRIPT AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!--MI JAVASCRIPT-->
+<script src="../scripts/menu.js" lang="javascript"></script>
+
 
 </body>
 

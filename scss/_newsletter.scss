@@ -34,10 +34,12 @@ svg {
   position: relative;
 
   h1 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
     font-size: 38px;
-    line-height: 40px;
+  font-weight: 600;
+  line-height: 40px;
 
     span {
       display: block;

@@ -14,20 +14,31 @@
     <title>ClaraMichi</title>
 
     <!--Google Fonts-->
+    <!--MONTSERRAT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
-        rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<!--SOURCE SANS PRO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<!--FONT LOGO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+    <!--estilos para cards de locales de comida-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
 
     <!--CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
-
-    <!--ANIMACION ANIMATE.STYLE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--AWESOME FONT-->
+    <script src="https://kit.fontawesome.com/e884321e9b.js" crossorigin="anonymous"></script>
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="./css/styles.css">
@@ -39,55 +50,80 @@
     <header class="header">
 
 
-        <nav class="menu-inicio">
-            <div class="lista-categorias">
-                <ul>
-                    <li><a href="./pages/Cafeteria.html">Cafetería<a></li>
-                    <li><a href="./pages/Heladeria.html">Heladería</a></li>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/RestoBar.html">RestoBar</a></li>
-                </ul>
+        <div class="container-menu">
+            <div class="container-navbar-fixed">
+                <nav class="navbar">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <a href="./index.html" class="logo"><img src="./images/iconos/clara-michi-logo.png"></a>
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="./pages/Cafeteria.html" class="nav-links"><i class="fas fa-coffee fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="./index.html" class="nav-links"><i class="fas fa-home fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="./pages/Heladeria.html" class="nav-links"><i class="fas fa-ice-cream fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="./pages/RestoBar.html" class="nav-links"><i class="fas fa-utensils fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
-        <img class="clara-michi-logo" src="./images/iconos/clara-michi-logo.png" alt="Imagenes">
+
+            <main>
+                <div class="welcome-section welcome-section-inicio">
+                    <div class="layer">
+                        <h1 class="welcome-headline">Clara Michi</h1>
+                    
+                    </div>
+                </div>
+            </main>
+        </div>
     </header>
-    <!--FIN DEL NAV-->
+
+
+        <!-----FIN DEL NAV------>
 
 
 
+  
 
 
-
-    <!--MAIN SECTION-->
-    <section class="main">
-        <div class="container">
-            <div class="row">
-                <div class=" animate-welcome animate__animated animate__fadeInLeft">
-                    <div class="col-sm-12 col-md-6">
-                        <H4>BIENVENIDO A</H4>
-                        <H1>ClaraMichi</H1>
-                        <p>Nos gusta comer, escribir y descubrir cosas nuevas, gastar poco y contárselo a todo el
-                            mundo;
-                            Te mostramos los locales de Buenos Aires más populares para disfrutar de la mejor
-                            comida!
-                        </p>
-
-                        <a href="" class="read-more">Bon Appétit!</a>
+    <section class="section1">
+        <div class="container-about-us">
+            <h1 class="title">Sobre Nosotros</h1>
+            <div class="content-wrapper">
+                <div class="img-wrapper">
+                    <div class="img" style="background-image: url('./images/iconos/Pavlova.jpg');"></div>
+                </div>
+                <div class="text-wrapper">
+                    <p class="text-about-us"> Nos gusta comer, escribir, los gatos, descubrir cosas nuevas gastando poco y contárselo a todo el mundo. <br>
+                        Aquí encontrarás las mejores opciones de Bares, Cafeterías y heladerías <br>
+                         con los mejores precios de Buenos Aires!
+                    </p> </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--MAIN SECTION END-->
+    <section class="section2"></section>
 
-    </header>
+
+
+
+
+
 
     <!---------------INICIO DEL CARRUSEL------------->
 
-    <div class=" margin-carusel-custom text-center container">
+    <div class="margin-carusel-custom text-center container">
         <div class="row mb-2">
             <div class="latest-locals-text">
-                <h3>Carousel with outer controls</h3>
+                <h2>LOCALES DEL MOMENTO</h2>
 
             </div>
         </div>
@@ -111,17 +147,21 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/Cafeterias/Alma Canela/alma canela brunch.webp">
+
+                                    <a href="./pages/Cafeteria.html"><img
+                                            src="./images/Cafeterias/AlmaCanela/alma canela brunch.webp"></a>
                                 </div>
 
 
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/Heladerias/Ainara Helados/ainara helados veganos.webp">
+                                    <a href="./pages/Heladeria.html"><img
+                                            src="./images/Heladerias/AinaraHelados/ainara helados veganos.webp"></a>
                                 </div>
 
 
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/RestoBar/Adela Vintage/adela vintage brunch.webp">
+                                    <a href="./pages/RestoBar.html"><img
+                                            src="./images/RestoBar/AdelaVintage/adela vintage brunch.webp"></a>
 
                                 </div>
                             </div>
@@ -129,17 +169,20 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/Cafeterias/Angelica DeliCoffee/angela deli coffee brunch.webp">
+                                    <a href="./pages/Cafeteria.html"><img
+                                            src="./images/Cafeterias/AngelicaDeliCoffee/angela deli coffee brunch.webp"></a>
                                 </div>
 
 
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/Heladerias/Bears Helados/bears helados.webp">
+                                    <a href="./pages/Heladeria.html"><img
+                                            src="./images/Heladerias/BearsHelados/bears helados.webp"></a>
                                 </div>
 
 
                                 <div class="col-10 d-flex align-items-center justify-content-center img-carrusel">
-                                    <img src="./images/RestoBar/Club de la Birra/club de la birra comida.webp">
+                                    <a href="./pages/RestoBar.html"><img
+                                            src="./images/RestoBar/AdelaVintage/adela vintage brunch.webp"></a>
 
                                 </div>
                             </div>
@@ -147,6 +190,8 @@
                     </div>
                 </div>
                 <!--End carousel-->
+
+
             </div>
             <div class="col-md-1 align-items-center justify-content-center carousel-button"><a role="button"
                     data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
@@ -166,13 +211,107 @@
     <!----------------FIN DEL CARRUSEL--------------->
 
 
+    <!--CARRUSEL VERSIÓN MOVIL Y TABLET-->
+
+
+    <div class="contenedor-carrusel">
+
+        <div id="carousel-inicio" class="carousel slide individual-movil" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-inicio" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="imagen">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/Cafeterias/AlmaCanela/alma canela brunch.webp" class="d-block w-100"
+                           >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>ALMA CANELA</h4>
+                            <p>BRUNCH DE ESTACIÓN</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Heladerias/AinaraHelados/ainara helados veganos.webp" class="d-block w-100"
+                           >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>AINARA HELADOS</h4>
+                            <p>HELADOS VEGANOS Y SIN TACC</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/RestoBar/AdelaVintage/adela vintage brunch.webp" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>ADELA VINTAGE</h4>
+                            <p>BRUNCH DEL MOMENTO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-inicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-inicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <!--FIN CARRUSEL MOVIL TABLET-->
+
+
+
+    <!------NEWSLETTER INICIO------->
+
+    <div class="contenedor-newsletter">
+        <div class="wave-and-newsletter">
+            <svg viewBox="1 529.754 599 68.749" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient spreadMethod="pad" id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(248, 165, 194);stop-opacity:1;" />
+                        <stop offset="100%" style="stop-color:rgb(119, 139, 235);stop-opacity:1;" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)"
+                    d=" M 0 560 Q 66.018 533.115 153.816 571.235 C 241.613 609.355 293.526 571.416 310 560 C 346.774 534.516 402.903 510.645 450 560 Q 497.097 609.355 600 560 L 600 600 L 0 600 L 0 560 Z ">
+                </path>
+            </svg>
+            <div class="newsletter">
+                <h1>¡HEY!<span> ¿DÓNDE COMEMOS HOY?</span></h1>
+                <p>¡Se parte de nuestra familia CLARAMICHI y conoce los mejores locales antes que nadie!</p>
+                <div class="text">
+                    <input type="text" placeholder="¡Pon tu email aqui para recibir novedades!">
+                    <button><i class="fas fa-arrow-right fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------NEWSLETTER FIN--------->
+
+
+
+
+
+
+
     <!--INICIO DE FOOTER-->
 
     <footer>
+
+
         <div class="footer-container">
             <div class="footer-content-container">
-                <div class="website-logo"><img src="../images/iconos/clara-michi-logo.png" alt=""></div>
-
+                <div class="website-logo"><a href="./index.html"><img src="../images/iconos/clara-michi-logo.png" alt="Clara Michi logo"></a></div>
                 <span class="footer-info">
                     <h3>CLARAMICHI</h3>
                 </span>
@@ -183,20 +322,21 @@
                     <span class="menu-title">
                         <h3>MENÚ:</h3>
                     </span>
-                    <a href="" class="menu-item-footer">Cafetería</a>
-                    <a href="" class="menu-item-footer">Heladería</a>
-                    <a href="" class="menu-item-footer">Inicio</a>
-                    <a href="" class="menu-item-footer">RestoBar</a>
+                    <a href="./pages/Cafeteria.html" class="menu-item-footer">Cafetería</a>
+                     <a href="./index.html" class="menu-item-footer">Inicio</a>
+                     <a href="./pages/Heladeria.html" class="menu-item-footer">Heladería</a>
+                   
+                    <a href="./pages/RestoBar.html" class="menu-item-footer">RestoBar</a>
                 </div>
 
                 <div class="footer-content-container">
                     <span class="menu-title">
-                        <h3>LEGAL:</h3>
+                        <h3>CONTACTO:</h3>
                     </span>
                     <span class="menu-title"></span>
-                    <a href="" class="menu-item-footer">Privacy policy</a>
-                    <a href="" class="menu-item-footer">cookies</a>
-                    <a href="" class="menu-item-footer">terms & conditions</a>
+                    <div class="menu-item-footer">¡ayudanos a crecer!</div>
+                    <div class="menu-item-footer">dinos tu local favorito</div>
+                    <a href="../pages/Contacto.html" class="menu-item-footer">aquí</a>
                 </div>
             </div>
 
@@ -205,10 +345,12 @@
                     <h3>Follow Us:</h3>
                 </span>
                 <div class="social-container">
-                    <div class="tw"><img src="../images/iconos/redes sociales/twitter.webp" alt=""></div>
-                    <div class="ig"><img src="../images/iconos/redes sociales/instagram.webp" alt=""></div>
-                    <div class="fb"><img src="../images/iconos/redes sociales/facebook.webp" alt=""></div>
-
+                    <div class="tw"><a href="https://twitter.com/home"><img
+                                src="../images/iconos/redes sociales/twitter.webp" alt="twitter button"></a></div>
+                    <div class="ig"><a href="https://www.instagram.com/"><img
+                                src="../images/iconos/redes sociales/instagram.webp" alt="instagram button"></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/"><img
+                                src="../images/iconos/redes sociales/facebook.webp" alt="facebook button"></a></div>
                 </div>
             </div>
         </div>
@@ -216,13 +358,16 @@
             <div class="copyright">copyright &copy; 2021 ClaraMichi. Todos los derechos reservados.</div>
             <div class="politic">Política de privacidad | Aviso legal | Mapa del sitio</div>
         </div>
+
     </footer>
+
 
     <!--JAVASCRIPT BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
-
+    <!--MI JAVASCRIPT-->
+    <script src="./scripts/menu.js" lang="javascript"></script>
 
 </body>

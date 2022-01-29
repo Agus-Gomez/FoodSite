@@ -1,44 +1,6 @@
 /*Grids de imágenes*/
 
-.locals-galery .container .row img {
-  height: 100%;
-  border-radius: 2rem;
-}
-
 /*Configuración del fondo de pantalla de las categorías*/
-@mixin category-background {
-  position: relative;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: top;
-  padding: 260px 0 220px;
-}
-
-.main-rb {
-  @include category-background;
-  background-image: url(../images/iconos/CatWithEgg.webp);
-}
-
-.main-h {
-  @include category-background;
-  background-image: url(../images/iconos/BlackCat_Ice_Cream_.webp);
-}
-
-.main-caf {
-    @include category-background;
-    background-image: url(../images/iconos/CoffeeCat.webp);
-}
-
-.main-cont {
-  @include category-background;
-  background-image: url(../images/iconos/CatContact.webp);
-}
-
-/*Configuración de las cartas de las categorías de imágenes*/
-.imageProperties {
-  border-radius: 2rem;
-  height: 100%;
-}
 
 /*--------CONFIGURACIÓN DE CARDS DE LOCALES DE COMIDA---------*/
 .grid-locals-container {
@@ -82,6 +44,15 @@
   margin: 0 0;
   max-width: 98%;
   overflow: hidden;
+  & h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  & p{
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+  }
 }
 
 .card-image-container {
@@ -105,7 +76,6 @@
 /*Para agrandar la card*/
 
 .card-body {
-  color: #7A7A7A;
   height: 100%;
   padding: 30px 20px 50px;
 
@@ -113,11 +83,6 @@
     font-size: 1.7rem
   }
 
-}
-
-.tagline {
-  font-size: 8px;
-  text-transform: uppercase;
 }
 
 .title {
@@ -132,10 +97,6 @@
   height: 2px;
   margin: 25px auto;
   width: 40px;
-}
-
-.paragraph {
-  font-weight: 300;
 }
 
 .read-more {
@@ -169,12 +130,6 @@
   }
 }
 
-@media (min-width: 728px) {
-  .cards-locales .locales {
-    grid-template-columns: repeat(3, 33.3%);
-  }
-}
-
 @media (min-width: 1024px) {
   .cards-locales .locales {
     grid-template-columns: repeat(2, 50%);
@@ -191,23 +146,7 @@
   }
 }
 
-@media (max-width: 530px) {
-  .container-fluid {
-    left: 0;
-    margin: 10px 0;
-    position: relative;
-    top: 0;
-    transform: none;
-  }
 
   .card-body {
     background-color: white;
   }
-}
-
-@media (max-width: 580px) {
-  .blog-card {
-    height: 350px;
-    overflow: visible;
-  }
-}

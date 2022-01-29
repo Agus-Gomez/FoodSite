@@ -13,12 +13,19 @@
     <title>Heladerías
 
     </title>
-    <!--Google Fonts-->
+     <!--Google Fonts-->
+    <!--MONTSERRAT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Satisfy&family=Staatliches&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<!--SOURCE SANS PRO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<!--FONT LOGO-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <!--estilos para cards de locales de comida-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
@@ -27,8 +34,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--ANIMACION ANIMATE.STYLE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--AWESOME FONT-->
+    <script src="https://kit.fontawesome.com/e884321e9b.js" crossorigin="anonymous"></script>
 
     <!--Mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
@@ -36,37 +43,50 @@
 
 
 
-<!--INICIO DEL NAV-->
-<header class="header">
+   <!--INICIO DEL NAV-->
+   <header class="header">
 
 
-    <nav class="menu-inicio">
-        <div class="lista-categorias">
-            <ul>
-                <li><a href="./Cafeteria.html">Cafetería<a></li>
-                <li><a href="./Heladeria.html">Heladería</a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./RestoBar.html">RestoBar</a></li>
-            </ul>
+    <div class="container-menu">
+        <div class="container-navbar-fixed">
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="../index.html" class="logo"><img src="../images/iconos/clara-michi-logo.png"></a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./Cafeteria.html" class="nav-links"><i class="fas fa-coffee fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links"><i class="fas fa-home fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="./Heladeria.html" class="nav-links"><i
+                                class="fas fa-ice-cream fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="./RestoBar.html" class="nav-links"><i class="fas fa-utensils fa-3x"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </nav>
-    <a href="../index.html" class="navbar-brand"><img class="clara-michi-logo"
-            src="../images/iconos/clara-michi-logo.png" alt="ClaraMichi logo"></a>
-</header>
-<!--FIN DEL NAV-->
 
-<!--MAIN SECTION-->
-<section class="main-h">
-    <div class="container">
-        <div class="row">
-            <div data-aos="fade-right">
-                <div class="col-sm-12 col-md-6">
+        <main>
+            <div class="welcome-section welcome-section-hel">
+                <div class="layer">
+                    <h1 class="welcome-headline">HELADERÍA</h1>
+                
                 </div>
             </div>
-        </div>
+        </main>
     </div>
-</section>
-<!--MAIN SECTION END-->
+
+</header>
+ <!-----FIN DEL NAV------>
+
+
+
 
 <!------------INICIO DE CARDS DE LOCALES DE COMIDA------------->
 
@@ -79,19 +99,17 @@
             <div class="container-fluid">
                 <div class="blog-card">
                     <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Ainara Helados/ainara helados veganos.webp">
+                        <img src="../images/Heladerias/AinaraHelados/ainara helados veganos.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <!--Cambiar el featured por los símbolos de comida-->
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+
+                        <p class="tagline text-center">COLEGIALES</p>
+                        <h3 class="title text-center">AINARA HELADOS</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p>
-                        <a class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify">El espacio es chiquito pero podés quedarte tomando helado o pedir para llevar.
+                            Tiene un montón de variedad de sabores y los precios son iguales que un helado tradicional.
+                        Los destacados son cheesecake con frutos rojos, maracuyá, chocolate Ainara  (con frambuesas y avellanas) y Mantecol.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -106,15 +124,13 @@
                         <img src="../images/Heladerias/Alchemy.BA/alchemy .ba helado wafle.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <p class="tagline text-center">PALERMO</p>
+                        <h3 class="title text-center">ALCHEMY BA</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify">Heladería con sabores exóticos que usan la ciencia del nitrógeno líquido para   preparar los helados más cremosos de Buenos Aires.
+                            Tienen sabores de TODO como queso azul, fernet, remolacha, campari, calabaza, provolone, cerveza, Martini entre otros.
+                            También cuentan con comidas saladas como pizzas y tragos para pasar una noche tranquila.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -126,18 +142,16 @@
             <div class="container-fluid">
                 <div class="blog-card">
                     <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Bears Helados/bears helados.webp">
+                        <img src="../images/Heladerias/BearsHelados/bears helados.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <p class="tagline text-center">CANING</p>
+                        <h3 class="title text-center">BEARS HELADOS</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify"> La decoración es muy divertida y simpática, desde peluches que están en el local hasta las paredes y los mismos vasitos.
+                         El helado es muy rico y cremoso sobre todo los sabores Sambayón con DDL y Chololate Sirius Black (con un guiño a los fanáticos de Harry Potter)
+                            Destaco también la atención, súper amables y hasta nos dejaron probar algunos gustos.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -149,18 +163,17 @@
             <div class="container-fluid">
                 <div class="blog-card">
                     <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/D.pop Helados/d.pop helados.webp">
+                        <img src="../images/Heladerias/D.popHelados/d.pop helados.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <p class="tagline text-center">INSTAGRAM</p>
+                        <h3 class="title text-center">D. POP HELADOS</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify">Postres gourmet en paleta con un montón de sabores y varios de ellos son sin  tacc o veganos.
+                             La presentación es divina y se pueden personalizar para el evento por ej  Navidad o Año nuevo.
+                             Dentro tienen una textura como si fuera una crema o mousse.
+                             Se pueden tomar pedidos o ir al local y llevarte el que más te guste.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -172,18 +185,16 @@
             <div class="container-fluid">
                 <div class="blog-card">
                     <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Finde Heladería/finde heladeria postre.webp">
+                        <img src="../images/Heladerias/FindeHeladería/finde heladeria postre.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <p class="tagline text-center">COLEGIALES</p>
+                        <h3 class="title text-center">FINDE HELADERÍA</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify"> El sitio es súper lindo y la decoración me pareció un encanto.
+                             No sólo venden helados, sino que tienen Brunchs, cafés, postres y pastelería.
+                            Cuenta con terraza con muchos espejos y plantas.
+                         Entre los sabores se destacan los de pie con limón, pistacho y brownie con DDL</p>
                     </div>
                 </div>
             </div>
@@ -195,112 +206,21 @@
             <div class="container-fluid">
                 <div class="blog-card">
                     <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Heladería Flamingo/heladeria flamingo black.webp">
+                        <img src="../images/Heladerias/HeladeríaFlamingo/heladeria flamingo black.webp">
                     </div>
                     <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
+                        <p class="tagline text-center">VICENTE LÓPEZ</p>
+                        <h3 class="title text-center">HELADERÍA FLAMINGO</h3>
                         <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
+                        <p class="paragraph text-justify"> Heladería con sabores clásicos y bien cremosos (el más destacado es el chocolate negro de carbón activado y gusto a coco)
+                            El local es grande y cuenta con mesas separadas para disfrutar tu helado sin problemas.
+                             Tienen opciones de cafés y sándwiches de jamón y queso.
+                            </p>
                     </div>
                 </div>
             </div>
         </article>
 
-
-        <article class="locales-columna">
-
-            <div class="container-fluid">
-                <div class="blog-card">
-                    <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Heladería Goodsten/heladería goodsten.webp">
-                    </div>
-                    <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                        <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-
-        <article class="locales-columna">
-
-            <div class="container-fluid">
-                <div class="blog-card">
-                    <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Helados Miau/helados miau ice-cream.webp">
-                    </div>
-                    <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                        <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="locales-columna">
-
-            <div class="container-fluid">
-                <div class="blog-card">
-                    <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Nausicaa/nausicaa helado cono.webp">
-                    </div>
-                    <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                        <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <article class="locales-columna">
-
-            <div class="container-fluid">
-                <div class="blog-card">
-                    <div class="card-image-container col-sm-6 col-xs-6">
-                        <img src="../images/Heladerias/Vibean/vibean heladeria pinguino.webp">
-                    </div>
-                    <div class="card-body col-sm-6 col-xs-6">
-                        <p class="tagline text-center">Featured</p>
-                        <h3 class="title text-center">Blue Ocean Waves Crash</h3>
-                        <div class="divider"></div>
-                        <p class="paragraph text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ad aliquam a
-                            incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at?
-                            At quasi
-                            magni voluptates molestiae aperiam</p><a
-                            class="read-more glyphicon glyphicon-chevron-down"></a>
-                    </div>
-                </div>
-            </div>
-        </article>
 
 
     </div>
@@ -309,57 +229,342 @@
 
 <!------------FIN DE CARDS DE LOCALES DE COMIDA------------->
 
-<!--INICIO DE FOOTER-->
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-content-container">
-            <div class="website-logo"><img src="../images/iconos/clara-michi-logo.png" alt=""></div>
 
-            <span class="footer-info">
-                <h3>CLARAMICHI</h3>
-            </span>
-        </div>
 
-        <div class="footer-menus">
-            <div class="footer-content-container">
-                <span class="menu-title">
-                    <h3>MENÚ:</h3>
-                </span>
-                <a href="" class="menu-item-footer">Cafetería</a>
-                <a href="" class="menu-item-footer">Heladería</a>
-                <a href="" class="menu-item-footer">Inicio</a>
-                <a href="" class="menu-item-footer">RestoBar</a>
+ <!------------INICIO DE CARDS ESTILO TABLET Y MOVIL----------------->
+
+
+ <div class="wrapper">
+    <div class="card">
+        <input type="checkbox" id="card1" class="more" aria-hidden="true">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/AinaraHelados/ainara\ helados\ veganos.webp')">
+                <div class="inner">
+                    <h2>AINARA HELADOS</h2>
+                    <div class="category-icon">
+                        <i
+                                class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card1" class="button" aria-hidden="true">
+                       COLEGIALES
+                    </label>
+                </div>
             </div>
+            <div class="back">
+                <div class="inner">
+                   
+                    <div class="description">
+                        <p>El espacio es chiquito pero podés quedarte tomando helado o pedir para llevar.
+                            Tiene un montón de variedad de sabores y los precios son iguales que un helado tradicional.
+                        Los destacados son cheesecake con frutos rojos, maracuyá, chocolate Ainara  (con frambuesas y avellanas) y Mantecol.</p>
+                        
+                    </div>
+                    <div class="local-title">AINARA HELADOS</div>
 
-            <div class="footer-content-container">
-                <span class="menu-title">
-                    <h3>LEGAL:</h3>
-                </span>
-                <span class="menu-title"></span>
-                <a href="" class="menu-item-footer">Privacy policy</a>
-                <a href="" class="menu-item-footer">cookies</a>
-                <a href="" class="menu-item-footer">terms & conditions</a>
-            </div>
-        </div>
-
-        <div class="footer-content-container">
-            <span class="menu-title">
-                <h3>Follow Us:</h3>
-            </span>
-            <div class="social-container">
-                <div class="tw"><img src="../images/iconos/redes sociales/twitter.webp" alt=""></div>
-                <div class="ig"><img src="../images/iconos/redes sociales/instagram.webp" alt=""></div>
-                <div class="fb"><img src="../images/iconos/redes sociales/facebook.webp" alt=""></div>
-
+                    <label for="card1" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
-    <div class="copyright-container">
-        <div class="copyright">copyright &copy; 2021 ClaraMichi. Todos los derechos reservados.</div>
-        <div class="politic">Política de privacidad | Aviso legal | Mapa del sitio</div>
+
+
+
+    <div class="card">
+        <input type="checkbox" id="card2" class="more">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/Alchemy.BA/alchemy\ .ba\ helado\ wafle.webp')">
+                <div class="inner">
+                    <h2>ALCHEMY BA</h2>
+                    <div class="category-icon">
+                        <i
+                        class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card2" class="button" aria-hidden="true">
+                       PALERMO
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+                    
+
+                    <div class="description">
+                        
+                        <p>Heladería con sabores exóticos que usan la ciencia del nitrógeno líquido para   preparar los helados más cremosos de Buenos Aires.
+                            Tienen sabores de TODO como queso azul, fernet, remolacha, campari, calabaza, provolone, cerveza, Martini entre otros.
+                            También cuentan con comidas saladas como pizzas y tragos para pasar una noche tranquila.</p>
+                    </div>
+                    <div class="local-title">ALCHEMY BA</div>
+
+                    <label for="card2" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
+
+
+
+    <div class="card">
+        <input type="checkbox" id="card3" class="more">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/BearsHelados/bears\ helados.webp')">
+                <div class="inner">
+                    <h2>BEARS HELADOS</h2>
+                    <div class="category-icon">
+                        <i
+                        class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card3" class="button" aria-hidden="true">
+                        CANING
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+                    
+
+                    <div class="description">
+                       
+                        <p>La decoración es muy divertida y simpática, desde peluches que están en el local hasta las paredes y los mismos vasitos.
+                            El helado es muy rico y cremoso sobre todo los sabores Sambayón con DDL y Chololate Sirius Black (con un guiño a los fanáticos de Harry Potter)
+                               Destaco también la atención, súper amables y hasta nos dejaron probar algunos gustos.</p>
+                    </div>
+                    <div class="local-title">BEAR HELADOS</div>
+
+                    <label for="card3" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <input type="checkbox" id="card4" class="more">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/D.popHelados/d.pop\ helados.webp')">
+                <div class="inner">
+                    <h2>D. POP HELADOS</h2>
+                    <div class="category-icon">
+                        <i
+                        class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card4" class="button" aria-hidden="true">
+                       INSTAGRAM
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+                   
+
+                    <div class="description">
+                        
+                        <p>Postres gourmet en paleta con un montón de sabores y varios de ellos son sin  tacc o veganos.
+                            La presentación es divina y se pueden personalizar para el evento por ej  Navidad o Año nuevo.
+                            Dentro tienen una textura como si fuera una crema o mousse.
+                            Se pueden tomar pedidos o ir al local y llevarte el que más te guste.</p>
+                    </div>
+                    <div class="local-title">D. POP HELADOS</div>
+
+                    <label for="card4" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <input type="checkbox" id="card5" class="more">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/FindeHeladería/finde\ heladeria\ postre.webp')">
+                <div class="inner">
+                    <h2>FINDE HELADERÍA</h2>
+                    <div class="category-icon">
+                        <i
+                        class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card5" class="button" aria-hidden="true">
+                        COLEGIALES
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+                    
+
+                    <div class="description">
+                       
+                        <p> El sitio es súper lindo y la decoración me pareció un encanto.
+                            No sólo venden helados, sino que tienen Brunchs, cafés, postres y pastelería.
+                           Cuenta con terraza con muchos espejos y plantas.
+                        Entre los sabores se destacan los de pie con limón, pistacho y brownie con DDL</p>
+                    </div>
+                    <div class="local-title">FINDE HELADERÍA</div>
+
+                    <label for="card5" class="button return" aria-hidden="true">
+                        
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="card">
+        <input type="checkbox" id="card6" class="more">
+        <div class="content">
+            <div class="front"
+                style="background-image: url('../images/Heladerias/HeladeríaFlamingo/heladeria\ flamingo\ black.webp')">
+                <div class="inner">
+                    <h2>HELADERÍA FLAMINGO</h2>
+                    <div class="category-icon">
+                        <i
+                        class="fas fa-ice-cream fa-3x"></i>
+                    </div>
+                    <label for="card6" class="button" aria-hidden="true">
+                       VICENTE LÓPEZ
+                    </label>
+                </div>
+            </div>
+            <div class="back">
+                <div class="inner">
+                    
+
+                    <div class="description">
+                       
+                        <p> Heladería con sabores clásicos y bien cremosos (el más destacado es el chocolate negro de carbón activado y gusto a coco)
+                            El local es grande y cuenta con mesas separadas para disfrutar tu helado sin problemas.
+                             Tienen opciones de cafés y sándwiches de jamón y queso.</p>
+                    </div>
+                    <div class="local-title">HELADERÍA FLAMINGO</div>
+
+                    <label for="card6" class="button return" aria-hidden="true">
+                        <i class="fas fa-arrow-left"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----------FIN DE CARD ESTILO TABLET Y MOVIL---------------------->
+
+
+
+
+
+
+
+
+
+    <!------NEWSLETTER INICIO------->
+
+    <div class="contenedor-newsletter">
+        <div class="wave-and-newsletter">
+            <svg viewBox="1 529.754 599 71.749" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient spreadMethod="pad" id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(248, 165, 194);stop-opacity:1;" />
+                        <stop offset="100%" style="stop-color:rgb(119, 139, 235);stop-opacity:1;" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)"
+                    d=" M 0 560 Q 66.018 533.115 153.816 571.235 C 241.613 609.355 293.526 571.416 310 560 C 346.774 534.516 402.903 510.645 450 560 Q 497.097 609.355 600 560 L 600 600 L 0 600 L 0 560 Z ">
+                </path>
+            </svg>
+            <div class="newsletter">
+                <h1>¡HEY!<span> ¿DÓNDE COMEMOS HOY?</span></h1>
+                <p>¡Se parte de nuestra familia CLARAMICHI y conoce los mejores locales antes que nadie!</p>
+                <div class="text">
+                    <input type="text" placeholder="¡Pon tu email aqui para recibir novedades!">
+                    <button><i class="fas fa-arrow-right fa-2x"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-------NEWSLETTER FIN--------->
+
+
+
+
+
+
+
+    <!--INICIO DE FOOTER-->
+
+    <footer>
+
+
+        <div class="footer-container">
+            <div class="footer-content-container">
+                <div class="website-logo"><a href="../index.html"><img src="../images/iconos/clara-michi-logo.png" alt="Clara Michi logo"></a></div>
+
+                <span class="footer-info">
+                    <h3>CLARAMICHI</h3>
+                </span>
+            </div>
+
+            <div class="footer-menus">
+                <div class="footer-content-container">
+                    <span class="menu-title">
+                        <h3>MENÚ:</h3>
+                    </span>
+                    <a href="./Cafeteria.html" class="menu-item-footer">Cafetería</a>
+                    <a href="../index.html" class="menu-item-footer">Inicio</a>
+                    <a href="./Heladeria.html" class="menu-item-footer">Heladería</a>
+                    <a href="./RestoBar.html" class="menu-item-footer">RestoBar</a>
+                </div>
+
+                <div class="footer-content-container">
+                    <span class="menu-title">
+                        <h3>CONTACTO:</h3>
+                    </span>
+                    <span class="menu-title"></span>
+                    <div class="menu-item-footer">¡ayudanos a crecer!</div>
+                    <div class="menu-item-footer">dinos tu local favorito</div>
+                    <a href="../pages/Contacto.html" class="menu-item-footer">aquí</a>
+                </div>
+            </div>
+
+            <div class="footer-content-container">
+                <span class="menu-title">
+                    <h3>Follow Us:</h3>
+                </span>
+                <div class="social-container">
+                    <div class="tw"><a href="https://twitter.com/home"><img
+                                src="../images/iconos/redes sociales/twitter.webp" alt="twitter button"></a></div>
+                    <div class="ig"><a href="https://www.instagram.com/"><img
+                                src="../images/iconos/redes sociales/instagram.webp" alt="instagram button"></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/"><img src="../images/iconos/redes sociales/facebook.webp"alt="facebook button"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="copyright">copyright &copy; 2021 ClaraMichi. Todos los derechos reservados.</div>
+            <div class="politic">Política de privacidad | Aviso legal | Mapa del sitio</div>
+        </div>
+
+    </footer>
+
 
 <!--JAVASCRIPT BOOTSTRAP-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -376,6 +581,9 @@
 <script>
     AOS.init();
 </script>
+
+ <!--MI JAVASCRIPT-->
+ <script src="../scripts/menu.js" lang="javascript"></script>
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+/*CARRUSEL VERSIÓN MOVIL*/
+
+.contenedor-carrusel {
+    width: 100%;
+    margin:  17% 0% 30% 6%;
+}
+
+
+
+
+.section-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.35s ease-in;
+
+    & H3 {
+        position: absolute;
+        border-radius: 20%;
+        padding: 12%;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+.carousel-indicators {
+    margin-bottom: 0%;
+}
+
+.individual-movil {
+    width: 47rem;
+    height: 49rem;
+
+}
+
+.carousel {
+    &-title {
+        margin: 100px 400px 100px;
+        padding: 10px 0;
+        background-color: #948b8593;
+        border-radius: 4rem;
+    }
+
+    /*Info del local de comida y carrusel*/
+    &-caption {
+        background-color: rgba(0, 0, 0, 0.541);
+        border-radius: 4rem;
+        margin-bottom: 130px;
+    }
+
+    &-item p {
+        font-size: 1.5rem;
+
+    }
+}
+
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    max-width: 90vw;
+    margin-right: 5px;
+    max-height: 90vh;
+    margin-bottom: 5px;
+}

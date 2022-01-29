@@ -10,7 +10,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #7f9950e7;
+  background: linear-gradient(90deg, #778beb, #f8a5c2);
   color: #fff;
 }
 
@@ -62,6 +62,10 @@ footer {
   width: 600px;
   float: right;
   text-align: right;
+}
+
+.fa-arrow-right {
+  margin-top: 1rem;
 }
 
 
@@ -124,6 +128,14 @@ footer {
     display: flex;
     align-items: center;
   }
+}
+
+footer .footer-menus .menu-item-footer,
+footer .footer-menus .menu-title h3,
+.newsletter input,
+.newsletter p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }
 
 .social-link {

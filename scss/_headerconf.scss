@@ -1,135 +1,116 @@
 /*INICIO HEADER NUEVO PRUEBA-------------------*/
 /*INICIO DEL NAV*/
-.header {
-    top: 0%;
-    /*el position hace que quede fijo el nav*/
-    position: fixed;
+
+.container-navbar-fixed {
     width: 100%;
+    top: 0;
     z-index: 1;
+    position: sticky;
 }
 
-.clara-michi-logo {
-    width: 130px;
-    height: 120px;
-    cursor: pointer;
-    margin-left: 20px;
-    opacity: 0.9;
-    /*para que quede delante*/
 
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    margin: 0;
 }
 
-.menu-inicio {
-    position: absolute;
-    top: 15px;
-    left: 34%;
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.logo img {
+    width: 90px;
+}
+
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
     display: inline-block;
-    border: 2px solid #f9f8fdb6;
-    border-radius: 40px;
-    background-color: #f9f8fdb6;
-    /*esto no esta funcionando*/
-    animation: slide-in 1s ease-out;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
-
-.lista-categorias {
-    ul {
-        position: relative;
-        display: flex;
-        flex: 1 1 auto;
-        margin: 7px;
-        padding: 0 30px;
-        list-style-type: none;
-        font-size: 200%;
-    }
-
-    li {
-        border: 2px solid transparent;
-        border-radius: 40px;
-        padding: 10px;
-        /*NO ESTA TOMANDO*/
-        transition: background 0.2s;
-
-        &:not(:last-child) {
-            margin-right: 40px;
-        }
-
-        &:hover {
-            background: #ffc617;
-            border-radius: 40px;
-
-            a {
-                color: black;
-            }
-        }
-    }
-
-
-    a {
-        color: #32245f;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: color 0.2s;
-    }
+.navbar-toggle {
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
 }
 
 
 
 
+.active {
+    display: block;
+}
+
+.layer {
+    background-color: rgba(255, 195, 138, 0.52);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-headline {
+    background-color: transparent;
+    color: #fffffff8;
+    text-align: center;
+    padding-top: 35vh;
+font-family: 'Satisfy', cursive;
+    font-size: 10rem;
+    font-style: normal;
+    line-height:108px;
+    font-weight: 600;
+    letter-spacing:normal;
+
+}
 
 
 
+//IMÁGEN DE LAS SECCIONES
 
-
-
-
-/*Texto de Bienvenida*/
-.main {
-    position: relative;
-    background-image: url(../images/iconos/CatWithChef2.webp);
-    min-height: 100vh;
+.welcome-section {
     background-size: cover;
-    background-position: top;
-    padding: 260px 0 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
 
-    .col-sm-12 {
-        H4 {
-            color: $light-color;
-            padding-top: 3%;
-            margin-bottom: 0;
-        }
-
-        H1 {
-            margin: 0%;
-            padding: 3%;
-            font-size: 9rem;
-        }
+    &-caf {
+        background-image: url("../images/iconos/cofeedessertcat.webp");
     }
 
-    p {
-        padding: 5%;
-        padding-bottom: 25px;
-        font-size: $font-24;
-        color: $dark-color;
-        background-color: #f7e1acad;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+    &-rb {
+        background-image: url("../images/iconos/CatWithEgg.webp")
     }
 
-    & .read-more {
-        background: #74c3cb;
-        color: $light-color;
-        font-size: $font-24;
-        margin-left: 39%;
-        border-radius: 5px;
-        padding: 10px 20px;
-        align-items: center;
-        text-decoration: none;
+    &-hel {
+        background-image: url("../images/iconos/BlackCat_Ice_Cream_.webp")
     }
-}
 
-/*Altura del texto de bienvenida*/
-.row {
-    margin-top: 0%;
+    &-con {
+        background-image: url("../images/iconos/CatContact.webp")
+    }
+
+    &-inicio {
+        background-image: url("../images/iconos/CatWithChef2.webp")
+    }
+
 }

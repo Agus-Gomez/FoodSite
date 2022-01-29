@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import"aboutUs";
+
 @import"variables";
 
 @import"generals";
@@ -11,6 +13,8 @@
 @import"headerconf";
 
 @import"newsletter";
+
+@import"carruselmovil";
 
 @import"caruselimages";
 
@@ -23,3 +27,4 @@
 @import"footer";
 
 @import"responsive";
+
